@@ -1,0 +1,20 @@
+!-------------------------------------------------------!
+!               TRAJECT.INPUT                           !
+!                                                       !
+!  Input for traj.                                      !
+!-------------------------------------------------------!
+! v1.0, Ryan Hastings, 16 Dec 2016                      !
+!-------------------------------------------------------!
+&filenames
+  cm1list='cm1list.input', ! list of CM1 files in ascending order (earliest to latest)
+  plist='plist.input', ! list of positions of parcels (m).  first line of this file is the number of parcels
+  varlist='outlist.input', ! list of fields to interpolate to parcel positions (must be on scalar grid)
+  outfile='traj_test.nc', ! output filename
+/
+
+&parameters
+  begintime=3660, ! time to regress parcels to (s)
+  parcelt=4200, ! time of initialization of parcels (s)
+  dt=15.0, ! time step for parcel integration. Does not need to be equal to the time between CM1 file dumps
+  vcm1=20.1 ! CM1 version. Must be a float
+/

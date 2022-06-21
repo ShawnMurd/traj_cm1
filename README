@@ -1,0 +1,20 @@
+Compute backward parcel trajectories using CM1 output.
+
+This code is a stripped-down version of the trajectory code in Ryan Hastings' 
+cm1_pp package. Unlike Ryan's code, only user-specified fields are interpolated 
+to the parcel locations, forward parcel integrations are not performed, and 
+only RK4 can be used to integrate parcels in time. This results in cleaner code 
+that *should* run faster. 
+
+Unlike Ryan's code, this program does perform time interpolation between CM1
+file dumps. This means that the timestep used in the RK4 scheme can be less than
+the time between CM1 file dumps, which results in more accurate trajectories
+than those using the time between file dumps as the timestep. This is 
+illustrated by the tests that used different timesteps (found in the 'tests'
+directory)
+
+Although I have made several changes to this program, most of the code is still
+Ryan's original code. I encourage visitors to also check out his cm1_pp program
+on GitHub.
+
+Shawn Murdzek

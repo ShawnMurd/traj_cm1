@@ -1,0 +1,2996 @@
+
+                   TRAJECT_CM1
+
+ opening traject.input
+ cm1list    =cm1list.input                                                                                                                                                                                           
+ plist      =plist.input                                                                                                                                                                                             
+ varlist    =outlist.input                                                                                                                                                                                           
+ outfile    =traj_test_60s.nc                                                                                                                                                                                        
+ begintime  =   3660.00000    
+ parcelt    =   4200.00000    
+ dt         =   60.0000000    
+ vcm1       =   20.1000004    
+
+ setting up arrays for parcel times
+ t,tp(t)=           1   3660.00000    
+ t,tp(t)=           2   3720.00000    
+ t,tp(t)=           3   3780.00000    
+ t,tp(t)=           4   3840.00000    
+ t,tp(t)=           5   3900.00000    
+ t,tp(t)=           6   3960.00000    
+ t,tp(t)=           7   4020.00000    
+ t,tp(t)=           8   4080.00000    
+ t,tp(t)=           9   4140.00000    
+ t,tp(t)=          10   4200.00000    
+ reading list of cm1 files:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       
+
+ reading times:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                          3660.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                          3720.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                          3780.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                          3840.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                          3900.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                          3960.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                          4020.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                          4080.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                          4140.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                          4200.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                          4260.00000    
+
+ reading list of variables to interpolate:
+ th        
+ prs       
+ buoyancy  
+ qv        
+ qr        
+ qc        
+ qi        
+ qi2       
+ tt_cond   
+ tt_evac   
+ tt_evar   
+ tt_frz    
+ tt_melt   
+ tt_dep    
+ tt_subl   
+ reading dimensions..
+
+ reading dimensions
+
+
+ ni,nj,nk=         600         600          99
+ nip1,njp1,nkp1=         601         601         100
+
+ reading space..
+ reading space-files..
+
+ reading in spatial variables
+
+ ....xh....
+ ....xf....
+ ....yh....
+ ....yf....
+ ....zh....
+ ....zf....
+ ....mzh....
+ ....mzf....
+
+ .......done reading in space
+
+ setting up stretching arrays
+ setting up some wind arrays
+
+ reading parcels
+           3  parcels
+ creating traj_test_60s.nc                                                                                                                                                                                        
+ ntimes=          10
+ nparcels=           3
+ setting up trajectory arrays
+ number of backward integration steps =           10
+ parcel            1  starts at x,y,z=  -9986.00000     m,   3943.00000     m,   38.0000000     m
+ parcel            2  starts at x,y,z=  -8856.00000     m,   4587.00000     m,   45.0000000     m
+ parcel            3  starts at x,y,z=  -8494.00000     m,   3055.00000     m,   32.0000000     m
+
+ ################################################################
+ starting backward trajectory calculations
+
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       ...time    4260.00000    
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       ...time    4200.00000    
+ --------------------------------------------------------------
+ time step           10  (   4200.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       ...time    4140.00000    
+ --------------------------------------------------------------
+ time step            9  (   4140.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       ...time    4080.00000    
+ --------------------------------------------------------------
+ time step            8  (   4080.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       ...time    4020.00000    
+ --------------------------------------------------------------
+ time step            7  (   4020.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       ...time    3960.00000    
+ --------------------------------------------------------------
+ time step            6  (   3960.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       ...time    3900.00000    
+ --------------------------------------------------------------
+ time step            5  (   3900.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       ...time    3840.00000    
+ --------------------------------------------------------------
+ time step            4  (   3840.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       ...time    3780.00000    
+ --------------------------------------------------------------
+ time step            3  (   3780.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       ...time    3720.00000    
+ --------------------------------------------------------------
+ time step            2  (   3720.00000     s)
+ ###################################################################
+ # write out netcdf file
+
+ done writing out netcdf file
+ program terminated normally
+
+                   TRAJECT_CM1
+
+ opening traject.input
+ cm1list    =cm1list.input                                                                                                                                                                                           
+ plist      =plist.input                                                                                                                                                                                             
+ varlist    =outlist.input                                                                                                                                                                                           
+ outfile    =traj_test_30s.nc                                                                                                                                                                                        
+ begintime  =   3660.00000    
+ parcelt    =   4200.00000    
+ dt         =   30.0000000    
+ vcm1       =   20.1000004    
+
+ setting up arrays for parcel times
+ t,tp(t)=           1   3660.00000    
+ t,tp(t)=           2   3690.00000    
+ t,tp(t)=           3   3720.00000    
+ t,tp(t)=           4   3750.00000    
+ t,tp(t)=           5   3780.00000    
+ t,tp(t)=           6   3810.00000    
+ t,tp(t)=           7   3840.00000    
+ t,tp(t)=           8   3870.00000    
+ t,tp(t)=           9   3900.00000    
+ t,tp(t)=          10   3930.00000    
+ t,tp(t)=          11   3960.00000    
+ t,tp(t)=          12   3990.00000    
+ t,tp(t)=          13   4020.00000    
+ t,tp(t)=          14   4050.00000    
+ t,tp(t)=          15   4080.00000    
+ t,tp(t)=          16   4110.00000    
+ t,tp(t)=          17   4140.00000    
+ t,tp(t)=          18   4170.00000    
+ t,tp(t)=          19   4200.00000    
+ reading list of cm1 files:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       
+
+ reading times:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                          3660.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                          3720.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                          3780.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                          3840.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                          3900.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                          3960.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                          4020.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                          4080.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                          4140.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                          4200.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                          4260.00000    
+
+ reading list of variables to interpolate:
+ th        
+ prs       
+ buoyancy  
+ qv        
+ qr        
+ qc        
+ qi        
+ qi2       
+ tt_cond   
+ tt_evac   
+ tt_evar   
+ tt_frz    
+ tt_melt   
+ tt_dep    
+ tt_subl   
+ reading dimensions..
+
+ reading dimensions
+
+
+ ni,nj,nk=         600         600          99
+ nip1,njp1,nkp1=         601         601         100
+
+ reading space..
+ reading space-files..
+
+ reading in spatial variables
+
+ ....xh....
+ ....xf....
+ ....yh....
+ ....yf....
+ ....zh....
+ ....zf....
+ ....mzh....
+ ....mzf....
+
+ .......done reading in space
+
+ setting up stretching arrays
+ setting up some wind arrays
+
+ reading parcels
+           3  parcels
+ creating traj_test_30s.nc                                                                                                                                                                                        
+ ntimes=          19
+ nparcels=           3
+ setting up trajectory arrays
+ number of backward integration steps =           19
+ parcel            1  starts at x,y,z=  -9986.00000     m,   3943.00000     m,   38.0000000     m
+ parcel            2  starts at x,y,z=  -8856.00000     m,   4587.00000     m,   45.0000000     m
+ parcel            3  starts at x,y,z=  -8494.00000     m,   3055.00000     m,   32.0000000     m
+
+ ################################################################
+ starting backward trajectory calculations
+
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       ...time    4260.00000    
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       ...time    4200.00000    
+ --------------------------------------------------------------
+ time step           19  (   4200.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       ...time    4140.00000    
+ --------------------------------------------------------------
+ time step           18  (   4170.00000     s)
+ --------------------------------------------------------------
+ time step           17  (   4140.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       ...time    4080.00000    
+ --------------------------------------------------------------
+ time step           16  (   4110.00000     s)
+ --------------------------------------------------------------
+ time step           15  (   4080.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       ...time    4020.00000    
+ --------------------------------------------------------------
+ time step           14  (   4050.00000     s)
+ --------------------------------------------------------------
+ time step           13  (   4020.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       ...time    3960.00000    
+ --------------------------------------------------------------
+ time step           12  (   3990.00000     s)
+ --------------------------------------------------------------
+ time step           11  (   3960.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       ...time    3900.00000    
+ --------------------------------------------------------------
+ time step           10  (   3930.00000     s)
+ --------------------------------------------------------------
+ time step            9  (   3900.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       ...time    3840.00000    
+ --------------------------------------------------------------
+ time step            8  (   3870.00000     s)
+ --------------------------------------------------------------
+ time step            7  (   3840.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       ...time    3780.00000    
+ --------------------------------------------------------------
+ time step            6  (   3810.00000     s)
+ --------------------------------------------------------------
+ time step            5  (   3780.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       ...time    3720.00000    
+ --------------------------------------------------------------
+ time step            4  (   3750.00000     s)
+ --------------------------------------------------------------
+ time step            3  (   3720.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       ...time    3660.00000    
+ --------------------------------------------------------------
+ time step            2  (   3690.00000     s)
+ ###################################################################
+ # write out netcdf file
+
+ done writing out netcdf file
+ program terminated normally
+
+                   TRAJECT_CM1
+
+ opening traject.input
+ cm1list    =cm1list.input                                                                                                                                                                                           
+ plist      =plist.input                                                                                                                                                                                             
+ varlist    =outlist.input                                                                                                                                                                                           
+ outfile    =traj_test_15s.nc                                                                                                                                                                                        
+ begintime  =   3660.00000    
+ parcelt    =   4200.00000    
+ dt         =   15.0000000    
+ vcm1       =   20.1000004    
+
+ setting up arrays for parcel times
+ t,tp(t)=           1   3660.00000    
+ t,tp(t)=           2   3675.00000    
+ t,tp(t)=           3   3690.00000    
+ t,tp(t)=           4   3705.00000    
+ t,tp(t)=           5   3720.00000    
+ t,tp(t)=           6   3735.00000    
+ t,tp(t)=           7   3750.00000    
+ t,tp(t)=           8   3765.00000    
+ t,tp(t)=           9   3780.00000    
+ t,tp(t)=          10   3795.00000    
+ t,tp(t)=          11   3810.00000    
+ t,tp(t)=          12   3825.00000    
+ t,tp(t)=          13   3840.00000    
+ t,tp(t)=          14   3855.00000    
+ t,tp(t)=          15   3870.00000    
+ t,tp(t)=          16   3885.00000    
+ t,tp(t)=          17   3900.00000    
+ t,tp(t)=          18   3915.00000    
+ t,tp(t)=          19   3930.00000    
+ t,tp(t)=          20   3945.00000    
+ t,tp(t)=          21   3960.00000    
+ t,tp(t)=          22   3975.00000    
+ t,tp(t)=          23   3990.00000    
+ t,tp(t)=          24   4005.00000    
+ t,tp(t)=          25   4020.00000    
+ t,tp(t)=          26   4035.00000    
+ t,tp(t)=          27   4050.00000    
+ t,tp(t)=          28   4065.00000    
+ t,tp(t)=          29   4080.00000    
+ t,tp(t)=          30   4095.00000    
+ t,tp(t)=          31   4110.00000    
+ t,tp(t)=          32   4125.00000    
+ t,tp(t)=          33   4140.00000    
+ t,tp(t)=          34   4155.00000    
+ t,tp(t)=          35   4170.00000    
+ t,tp(t)=          36   4185.00000    
+ t,tp(t)=          37   4200.00000    
+ reading list of cm1 files:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       
+
+ reading times:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                          3660.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                          3720.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                          3780.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                          3840.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                          3900.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                          3960.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                          4020.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                          4080.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                          4140.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                          4200.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                          4260.00000    
+
+ reading list of variables to interpolate:
+ th        
+ prs       
+ buoyancy  
+ qv        
+ qr        
+ qc        
+ qi        
+ qi2       
+ tt_cond   
+ tt_evac   
+ tt_evar   
+ tt_frz    
+ tt_melt   
+ tt_dep    
+ tt_subl   
+ reading dimensions..
+
+ reading dimensions
+
+
+ ni,nj,nk=         600         600          99
+ nip1,njp1,nkp1=         601         601         100
+
+ reading space..
+ reading space-files..
+
+ reading in spatial variables
+
+ ....xh....
+ ....xf....
+ ....yh....
+ ....yf....
+ ....zh....
+ ....zf....
+ ....mzh....
+ ....mzf....
+
+ .......done reading in space
+
+ setting up stretching arrays
+ setting up some wind arrays
+
+ reading parcels
+           3  parcels
+ creating traj_test_15s.nc                                                                                                                                                                                        
+ ntimes=          37
+ nparcels=           3
+ setting up trajectory arrays
+ number of backward integration steps =           37
+ parcel            1  starts at x,y,z=  -9986.00000     m,   3943.00000     m,   38.0000000     m
+ parcel            2  starts at x,y,z=  -8856.00000     m,   4587.00000     m,   45.0000000     m
+ parcel            3  starts at x,y,z=  -8494.00000     m,   3055.00000     m,   32.0000000     m
+
+ ################################################################
+ starting backward trajectory calculations
+
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       ...time    4260.00000    
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       ...time    4200.00000    
+ --------------------------------------------------------------
+ time step           37  (   4200.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       ...time    4140.00000    
+ --------------------------------------------------------------
+ time step           36  (   4185.00000     s)
+ --------------------------------------------------------------
+ time step           35  (   4170.00000     s)
+ --------------------------------------------------------------
+ time step           34  (   4155.00000     s)
+ --------------------------------------------------------------
+ time step           33  (   4140.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       ...time    4080.00000    
+ --------------------------------------------------------------
+ time step           32  (   4125.00000     s)
+ --------------------------------------------------------------
+ time step           31  (   4110.00000     s)
+ --------------------------------------------------------------
+ time step           30  (   4095.00000     s)
+ --------------------------------------------------------------
+ time step           29  (   4080.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       ...time    4020.00000    
+ --------------------------------------------------------------
+ time step           28  (   4065.00000     s)
+ --------------------------------------------------------------
+ time step           27  (   4050.00000     s)
+ --------------------------------------------------------------
+ time step           26  (   4035.00000     s)
+ --------------------------------------------------------------
+ time step           25  (   4020.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       ...time    3960.00000    
+ --------------------------------------------------------------
+ time step           24  (   4005.00000     s)
+ --------------------------------------------------------------
+ time step           23  (   3990.00000     s)
+ --------------------------------------------------------------
+ time step           22  (   3975.00000     s)
+ --------------------------------------------------------------
+ time step           21  (   3960.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       ...time    3900.00000    
+ --------------------------------------------------------------
+ time step           20  (   3945.00000     s)
+ --------------------------------------------------------------
+ time step           19  (   3930.00000     s)
+ --------------------------------------------------------------
+ time step           18  (   3915.00000     s)
+ --------------------------------------------------------------
+ time step           17  (   3900.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       ...time    3840.00000    
+ --------------------------------------------------------------
+ time step           16  (   3885.00000     s)
+ --------------------------------------------------------------
+ time step           15  (   3870.00000     s)
+ --------------------------------------------------------------
+ time step           14  (   3855.00000     s)
+ --------------------------------------------------------------
+ time step           13  (   3840.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       ...time    3780.00000    
+ --------------------------------------------------------------
+ time step           12  (   3825.00000     s)
+ --------------------------------------------------------------
+ time step           11  (   3810.00000     s)
+ --------------------------------------------------------------
+ time step           10  (   3795.00000     s)
+ --------------------------------------------------------------
+ time step            9  (   3780.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       ...time    3720.00000    
+ --------------------------------------------------------------
+ time step            8  (   3765.00000     s)
+ --------------------------------------------------------------
+ time step            7  (   3750.00000     s)
+ --------------------------------------------------------------
+ time step            6  (   3735.00000     s)
+ --------------------------------------------------------------
+ time step            5  (   3720.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       ...time    3660.00000    
+ --------------------------------------------------------------
+ time step            4  (   3705.00000     s)
+ --------------------------------------------------------------
+ time step            3  (   3690.00000     s)
+ --------------------------------------------------------------
+ time step            2  (   3675.00000     s)
+ ###################################################################
+ # write out netcdf file
+
+ done writing out netcdf file
+ program terminated normally
+
+                   TRAJECT_CM1
+
+ opening traject.input
+ cm1list    =cm1list.input                                                                                                                                                                                           
+ plist      =plist.input                                                                                                                                                                                             
+ varlist    =outlist.input                                                                                                                                                                                           
+ outfile    =traj_test_10s.nc                                                                                                                                                                                        
+ begintime  =   3660.00000    
+ parcelt    =   4200.00000    
+ dt         =   10.0000000    
+ vcm1       =   20.1000004    
+
+ setting up arrays for parcel times
+ t,tp(t)=           1   3660.00000    
+ t,tp(t)=           2   3670.00000    
+ t,tp(t)=           3   3680.00000    
+ t,tp(t)=           4   3690.00000    
+ t,tp(t)=           5   3700.00000    
+ t,tp(t)=           6   3710.00000    
+ t,tp(t)=           7   3720.00000    
+ t,tp(t)=           8   3730.00000    
+ t,tp(t)=           9   3740.00000    
+ t,tp(t)=          10   3750.00000    
+ t,tp(t)=          11   3760.00000    
+ t,tp(t)=          12   3770.00000    
+ t,tp(t)=          13   3780.00000    
+ t,tp(t)=          14   3790.00000    
+ t,tp(t)=          15   3800.00000    
+ t,tp(t)=          16   3810.00000    
+ t,tp(t)=          17   3820.00000    
+ t,tp(t)=          18   3830.00000    
+ t,tp(t)=          19   3840.00000    
+ t,tp(t)=          20   3850.00000    
+ t,tp(t)=          21   3860.00000    
+ t,tp(t)=          22   3870.00000    
+ t,tp(t)=          23   3880.00000    
+ t,tp(t)=          24   3890.00000    
+ t,tp(t)=          25   3900.00000    
+ t,tp(t)=          26   3910.00000    
+ t,tp(t)=          27   3920.00000    
+ t,tp(t)=          28   3930.00000    
+ t,tp(t)=          29   3940.00000    
+ t,tp(t)=          30   3950.00000    
+ t,tp(t)=          31   3960.00000    
+ t,tp(t)=          32   3970.00000    
+ t,tp(t)=          33   3980.00000    
+ t,tp(t)=          34   3990.00000    
+ t,tp(t)=          35   4000.00000    
+ t,tp(t)=          36   4010.00000    
+ t,tp(t)=          37   4020.00000    
+ t,tp(t)=          38   4030.00000    
+ t,tp(t)=          39   4040.00000    
+ t,tp(t)=          40   4050.00000    
+ t,tp(t)=          41   4060.00000    
+ t,tp(t)=          42   4070.00000    
+ t,tp(t)=          43   4080.00000    
+ t,tp(t)=          44   4090.00000    
+ t,tp(t)=          45   4100.00000    
+ t,tp(t)=          46   4110.00000    
+ t,tp(t)=          47   4120.00000    
+ t,tp(t)=          48   4130.00000    
+ t,tp(t)=          49   4140.00000    
+ t,tp(t)=          50   4150.00000    
+ t,tp(t)=          51   4160.00000    
+ t,tp(t)=          52   4170.00000    
+ t,tp(t)=          53   4180.00000    
+ t,tp(t)=          54   4190.00000    
+ t,tp(t)=          55   4200.00000    
+ reading list of cm1 files:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       
+
+ reading times:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                          3660.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                          3720.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                          3780.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                          3840.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                          3900.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                          3960.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                          4020.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                          4080.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                          4140.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                          4200.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                          4260.00000    
+
+ reading list of variables to interpolate:
+ th        
+ prs       
+ buoyancy  
+ qv        
+ qr        
+ qc        
+ qi        
+ qi2       
+ tt_cond   
+ tt_evac   
+ tt_evar   
+ tt_frz    
+ tt_melt   
+ tt_dep    
+ tt_subl   
+ reading dimensions..
+
+ reading dimensions
+
+
+ ni,nj,nk=         600         600          99
+ nip1,njp1,nkp1=         601         601         100
+
+ reading space..
+ reading space-files..
+
+ reading in spatial variables
+
+ ....xh....
+ ....xf....
+ ....yh....
+ ....yf....
+ ....zh....
+ ....zf....
+ ....mzh....
+ ....mzf....
+
+ .......done reading in space
+
+ setting up stretching arrays
+ setting up some wind arrays
+
+ reading parcels
+           3  parcels
+ creating traj_test_10s.nc                                                                                                                                                                                        
+ ntimes=          55
+ nparcels=           3
+ setting up trajectory arrays
+ number of backward integration steps =           55
+ parcel            1  starts at x,y,z=  -9986.00000     m,   3943.00000     m,   38.0000000     m
+ parcel            2  starts at x,y,z=  -8856.00000     m,   4587.00000     m,   45.0000000     m
+ parcel            3  starts at x,y,z=  -8494.00000     m,   3055.00000     m,   32.0000000     m
+
+ ################################################################
+ starting backward trajectory calculations
+
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       ...time    4260.00000    
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       ...time    4200.00000    
+ --------------------------------------------------------------
+ time step           55  (   4200.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       ...time    4140.00000    
+ --------------------------------------------------------------
+ time step           54  (   4190.00000     s)
+ --------------------------------------------------------------
+ time step           53  (   4180.00000     s)
+ --------------------------------------------------------------
+ time step           52  (   4170.00000     s)
+ --------------------------------------------------------------
+ time step           51  (   4160.00000     s)
+ --------------------------------------------------------------
+ time step           50  (   4150.00000     s)
+ --------------------------------------------------------------
+ time step           49  (   4140.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       ...time    4080.00000    
+ --------------------------------------------------------------
+ time step           48  (   4130.00000     s)
+ --------------------------------------------------------------
+ time step           47  (   4120.00000     s)
+ --------------------------------------------------------------
+ time step           46  (   4110.00000     s)
+ --------------------------------------------------------------
+ time step           45  (   4100.00000     s)
+ --------------------------------------------------------------
+ time step           44  (   4090.00000     s)
+ --------------------------------------------------------------
+ time step           43  (   4080.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       ...time    4020.00000    
+ --------------------------------------------------------------
+ time step           42  (   4070.00000     s)
+ --------------------------------------------------------------
+ time step           41  (   4060.00000     s)
+ --------------------------------------------------------------
+ time step           40  (   4050.00000     s)
+ --------------------------------------------------------------
+ time step           39  (   4040.00000     s)
+ --------------------------------------------------------------
+ time step           38  (   4030.00000     s)
+ --------------------------------------------------------------
+ time step           37  (   4020.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       ...time    3960.00000    
+ --------------------------------------------------------------
+ time step           36  (   4010.00000     s)
+ --------------------------------------------------------------
+ time step           35  (   4000.00000     s)
+ --------------------------------------------------------------
+ time step           34  (   3990.00000     s)
+ --------------------------------------------------------------
+ time step           33  (   3980.00000     s)
+ --------------------------------------------------------------
+ time step           32  (   3970.00000     s)
+ --------------------------------------------------------------
+ time step           31  (   3960.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       ...time    3900.00000    
+ --------------------------------------------------------------
+ time step           30  (   3950.00000     s)
+ --------------------------------------------------------------
+ time step           29  (   3940.00000     s)
+ --------------------------------------------------------------
+ time step           28  (   3930.00000     s)
+ --------------------------------------------------------------
+ time step           27  (   3920.00000     s)
+ --------------------------------------------------------------
+ time step           26  (   3910.00000     s)
+ --------------------------------------------------------------
+ time step           25  (   3900.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       ...time    3840.00000    
+ --------------------------------------------------------------
+ time step           24  (   3890.00000     s)
+ --------------------------------------------------------------
+ time step           23  (   3880.00000     s)
+ --------------------------------------------------------------
+ time step           22  (   3870.00000     s)
+ --------------------------------------------------------------
+ time step           21  (   3860.00000     s)
+ --------------------------------------------------------------
+ time step           20  (   3850.00000     s)
+ --------------------------------------------------------------
+ time step           19  (   3840.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       ...time    3780.00000    
+ --------------------------------------------------------------
+ time step           18  (   3830.00000     s)
+ --------------------------------------------------------------
+ time step           17  (   3820.00000     s)
+ --------------------------------------------------------------
+ time step           16  (   3810.00000     s)
+ --------------------------------------------------------------
+ time step           15  (   3800.00000     s)
+ --------------------------------------------------------------
+ time step           14  (   3790.00000     s)
+ --------------------------------------------------------------
+ time step           13  (   3780.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       ...time    3720.00000    
+ --------------------------------------------------------------
+ time step           12  (   3770.00000     s)
+ --------------------------------------------------------------
+ time step           11  (   3760.00000     s)
+ --------------------------------------------------------------
+ time step           10  (   3750.00000     s)
+ --------------------------------------------------------------
+ time step            9  (   3740.00000     s)
+ --------------------------------------------------------------
+ time step            8  (   3730.00000     s)
+ --------------------------------------------------------------
+ time step            7  (   3720.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       ...time    3660.00000    
+ --------------------------------------------------------------
+ time step            6  (   3710.00000     s)
+ --------------------------------------------------------------
+ time step            5  (   3700.00000     s)
+ --------------------------------------------------------------
+ time step            4  (   3690.00000     s)
+ --------------------------------------------------------------
+ time step            3  (   3680.00000     s)
+ --------------------------------------------------------------
+ time step            2  (   3670.00000     s)
+ ###################################################################
+ # write out netcdf file
+
+ done writing out netcdf file
+ program terminated normally
+
+                   TRAJECT_CM1
+
+ opening traject.input
+ cm1list    =cm1list.input                                                                                                                                                                                           
+ plist      =plist.input                                                                                                                                                                                             
+ varlist    =outlist.input                                                                                                                                                                                           
+ outfile    =traj_test_5s.nc                                                                                                                                                                                         
+ begintime  =   3660.00000    
+ parcelt    =   4200.00000    
+ dt         =   5.00000000    
+ vcm1       =   20.1000004    
+
+ setting up arrays for parcel times
+ t,tp(t)=           1   3660.00000    
+ t,tp(t)=           2   3665.00000    
+ t,tp(t)=           3   3670.00000    
+ t,tp(t)=           4   3675.00000    
+ t,tp(t)=           5   3680.00000    
+ t,tp(t)=           6   3685.00000    
+ t,tp(t)=           7   3690.00000    
+ t,tp(t)=           8   3695.00000    
+ t,tp(t)=           9   3700.00000    
+ t,tp(t)=          10   3705.00000    
+ t,tp(t)=          11   3710.00000    
+ t,tp(t)=          12   3715.00000    
+ t,tp(t)=          13   3720.00000    
+ t,tp(t)=          14   3725.00000    
+ t,tp(t)=          15   3730.00000    
+ t,tp(t)=          16   3735.00000    
+ t,tp(t)=          17   3740.00000    
+ t,tp(t)=          18   3745.00000    
+ t,tp(t)=          19   3750.00000    
+ t,tp(t)=          20   3755.00000    
+ t,tp(t)=          21   3760.00000    
+ t,tp(t)=          22   3765.00000    
+ t,tp(t)=          23   3770.00000    
+ t,tp(t)=          24   3775.00000    
+ t,tp(t)=          25   3780.00000    
+ t,tp(t)=          26   3785.00000    
+ t,tp(t)=          27   3790.00000    
+ t,tp(t)=          28   3795.00000    
+ t,tp(t)=          29   3800.00000    
+ t,tp(t)=          30   3805.00000    
+ t,tp(t)=          31   3810.00000    
+ t,tp(t)=          32   3815.00000    
+ t,tp(t)=          33   3820.00000    
+ t,tp(t)=          34   3825.00000    
+ t,tp(t)=          35   3830.00000    
+ t,tp(t)=          36   3835.00000    
+ t,tp(t)=          37   3840.00000    
+ t,tp(t)=          38   3845.00000    
+ t,tp(t)=          39   3850.00000    
+ t,tp(t)=          40   3855.00000    
+ t,tp(t)=          41   3860.00000    
+ t,tp(t)=          42   3865.00000    
+ t,tp(t)=          43   3870.00000    
+ t,tp(t)=          44   3875.00000    
+ t,tp(t)=          45   3880.00000    
+ t,tp(t)=          46   3885.00000    
+ t,tp(t)=          47   3890.00000    
+ t,tp(t)=          48   3895.00000    
+ t,tp(t)=          49   3900.00000    
+ t,tp(t)=          50   3905.00000    
+ t,tp(t)=          51   3910.00000    
+ t,tp(t)=          52   3915.00000    
+ t,tp(t)=          53   3920.00000    
+ t,tp(t)=          54   3925.00000    
+ t,tp(t)=          55   3930.00000    
+ t,tp(t)=          56   3935.00000    
+ t,tp(t)=          57   3940.00000    
+ t,tp(t)=          58   3945.00000    
+ t,tp(t)=          59   3950.00000    
+ t,tp(t)=          60   3955.00000    
+ t,tp(t)=          61   3960.00000    
+ t,tp(t)=          62   3965.00000    
+ t,tp(t)=          63   3970.00000    
+ t,tp(t)=          64   3975.00000    
+ t,tp(t)=          65   3980.00000    
+ t,tp(t)=          66   3985.00000    
+ t,tp(t)=          67   3990.00000    
+ t,tp(t)=          68   3995.00000    
+ t,tp(t)=          69   4000.00000    
+ t,tp(t)=          70   4005.00000    
+ t,tp(t)=          71   4010.00000    
+ t,tp(t)=          72   4015.00000    
+ t,tp(t)=          73   4020.00000    
+ t,tp(t)=          74   4025.00000    
+ t,tp(t)=          75   4030.00000    
+ t,tp(t)=          76   4035.00000    
+ t,tp(t)=          77   4040.00000    
+ t,tp(t)=          78   4045.00000    
+ t,tp(t)=          79   4050.00000    
+ t,tp(t)=          80   4055.00000    
+ t,tp(t)=          81   4060.00000    
+ t,tp(t)=          82   4065.00000    
+ t,tp(t)=          83   4070.00000    
+ t,tp(t)=          84   4075.00000    
+ t,tp(t)=          85   4080.00000    
+ t,tp(t)=          86   4085.00000    
+ t,tp(t)=          87   4090.00000    
+ t,tp(t)=          88   4095.00000    
+ t,tp(t)=          89   4100.00000    
+ t,tp(t)=          90   4105.00000    
+ t,tp(t)=          91   4110.00000    
+ t,tp(t)=          92   4115.00000    
+ t,tp(t)=          93   4120.00000    
+ t,tp(t)=          94   4125.00000    
+ t,tp(t)=          95   4130.00000    
+ t,tp(t)=          96   4135.00000    
+ t,tp(t)=          97   4140.00000    
+ t,tp(t)=          98   4145.00000    
+ t,tp(t)=          99   4150.00000    
+ t,tp(t)=         100   4155.00000    
+ t,tp(t)=         101   4160.00000    
+ t,tp(t)=         102   4165.00000    
+ t,tp(t)=         103   4170.00000    
+ t,tp(t)=         104   4175.00000    
+ t,tp(t)=         105   4180.00000    
+ t,tp(t)=         106   4185.00000    
+ t,tp(t)=         107   4190.00000    
+ t,tp(t)=         108   4195.00000    
+ t,tp(t)=         109   4200.00000    
+ reading list of cm1 files:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       
+
+ reading times:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                          3660.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                          3720.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                          3780.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                          3840.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                          3900.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                          3960.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                          4020.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                          4080.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                          4140.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                          4200.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                          4260.00000    
+
+ reading list of variables to interpolate:
+ th        
+ prs       
+ buoyancy  
+ qv        
+ qr        
+ qc        
+ qi        
+ qi2       
+ tt_cond   
+ tt_evac   
+ tt_evar   
+ tt_frz    
+ tt_melt   
+ tt_dep    
+ tt_subl   
+ reading dimensions..
+
+ reading dimensions
+
+
+ ni,nj,nk=         600         600          99
+ nip1,njp1,nkp1=         601         601         100
+
+ reading space..
+ reading space-files..
+
+ reading in spatial variables
+
+ ....xh....
+ ....xf....
+ ....yh....
+ ....yf....
+ ....zh....
+ ....zf....
+ ....mzh....
+ ....mzf....
+
+ .......done reading in space
+
+ setting up stretching arrays
+ setting up some wind arrays
+
+ reading parcels
+           3  parcels
+ creating traj_test_5s.nc                                                                                                                                                                                         
+ ntimes=         109
+ nparcels=           3
+ setting up trajectory arrays
+ number of backward integration steps =          109
+ parcel            1  starts at x,y,z=  -9986.00000     m,   3943.00000     m,   38.0000000     m
+ parcel            2  starts at x,y,z=  -8856.00000     m,   4587.00000     m,   45.0000000     m
+ parcel            3  starts at x,y,z=  -8494.00000     m,   3055.00000     m,   32.0000000     m
+
+ ################################################################
+ starting backward trajectory calculations
+
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       ...time    4260.00000    
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       ...time    4200.00000    
+ --------------------------------------------------------------
+ time step          109  (   4200.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       ...time    4140.00000    
+ --------------------------------------------------------------
+ time step          108  (   4195.00000     s)
+ --------------------------------------------------------------
+ time step          107  (   4190.00000     s)
+ --------------------------------------------------------------
+ time step          106  (   4185.00000     s)
+ --------------------------------------------------------------
+ time step          105  (   4180.00000     s)
+ --------------------------------------------------------------
+ time step          104  (   4175.00000     s)
+ --------------------------------------------------------------
+ time step          103  (   4170.00000     s)
+ --------------------------------------------------------------
+ time step          102  (   4165.00000     s)
+ --------------------------------------------------------------
+ time step          101  (   4160.00000     s)
+ --------------------------------------------------------------
+ time step          100  (   4155.00000     s)
+ --------------------------------------------------------------
+ time step           99  (   4150.00000     s)
+ --------------------------------------------------------------
+ time step           98  (   4145.00000     s)
+ --------------------------------------------------------------
+ time step           97  (   4140.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       ...time    4080.00000    
+ --------------------------------------------------------------
+ time step           96  (   4135.00000     s)
+ --------------------------------------------------------------
+ time step           95  (   4130.00000     s)
+ --------------------------------------------------------------
+ time step           94  (   4125.00000     s)
+ --------------------------------------------------------------
+ time step           93  (   4120.00000     s)
+ --------------------------------------------------------------
+ time step           92  (   4115.00000     s)
+ --------------------------------------------------------------
+ time step           91  (   4110.00000     s)
+ --------------------------------------------------------------
+ time step           90  (   4105.00000     s)
+ --------------------------------------------------------------
+ time step           89  (   4100.00000     s)
+ --------------------------------------------------------------
+ time step           88  (   4095.00000     s)
+ --------------------------------------------------------------
+ time step           87  (   4090.00000     s)
+ --------------------------------------------------------------
+ time step           86  (   4085.00000     s)
+ --------------------------------------------------------------
+ time step           85  (   4080.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       ...time    4020.00000    
+ --------------------------------------------------------------
+ time step           84  (   4075.00000     s)
+ --------------------------------------------------------------
+ time step           83  (   4070.00000     s)
+ --------------------------------------------------------------
+ time step           82  (   4065.00000     s)
+ --------------------------------------------------------------
+ time step           81  (   4060.00000     s)
+ --------------------------------------------------------------
+ time step           80  (   4055.00000     s)
+ --------------------------------------------------------------
+ time step           79  (   4050.00000     s)
+ --------------------------------------------------------------
+ time step           78  (   4045.00000     s)
+ --------------------------------------------------------------
+ time step           77  (   4040.00000     s)
+ --------------------------------------------------------------
+ time step           76  (   4035.00000     s)
+ --------------------------------------------------------------
+ time step           75  (   4030.00000     s)
+ --------------------------------------------------------------
+ time step           74  (   4025.00000     s)
+ --------------------------------------------------------------
+ time step           73  (   4020.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       ...time    3960.00000    
+ --------------------------------------------------------------
+ time step           72  (   4015.00000     s)
+ --------------------------------------------------------------
+ time step           71  (   4010.00000     s)
+ --------------------------------------------------------------
+ time step           70  (   4005.00000     s)
+ --------------------------------------------------------------
+ time step           69  (   4000.00000     s)
+ --------------------------------------------------------------
+ time step           68  (   3995.00000     s)
+ --------------------------------------------------------------
+ time step           67  (   3990.00000     s)
+ --------------------------------------------------------------
+ time step           66  (   3985.00000     s)
+ --------------------------------------------------------------
+ time step           65  (   3980.00000     s)
+ --------------------------------------------------------------
+ time step           64  (   3975.00000     s)
+ --------------------------------------------------------------
+ time step           63  (   3970.00000     s)
+ --------------------------------------------------------------
+ time step           62  (   3965.00000     s)
+ --------------------------------------------------------------
+ time step           61  (   3960.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       ...time    3900.00000    
+ --------------------------------------------------------------
+ time step           60  (   3955.00000     s)
+ --------------------------------------------------------------
+ time step           59  (   3950.00000     s)
+ --------------------------------------------------------------
+ time step           58  (   3945.00000     s)
+ --------------------------------------------------------------
+ time step           57  (   3940.00000     s)
+ --------------------------------------------------------------
+ time step           56  (   3935.00000     s)
+ --------------------------------------------------------------
+ time step           55  (   3930.00000     s)
+ --------------------------------------------------------------
+ time step           54  (   3925.00000     s)
+ --------------------------------------------------------------
+ time step           53  (   3920.00000     s)
+ --------------------------------------------------------------
+ time step           52  (   3915.00000     s)
+ --------------------------------------------------------------
+ time step           51  (   3910.00000     s)
+ --------------------------------------------------------------
+ time step           50  (   3905.00000     s)
+ --------------------------------------------------------------
+ time step           49  (   3900.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       ...time    3840.00000    
+ --------------------------------------------------------------
+ time step           48  (   3895.00000     s)
+ --------------------------------------------------------------
+ time step           47  (   3890.00000     s)
+ --------------------------------------------------------------
+ time step           46  (   3885.00000     s)
+ --------------------------------------------------------------
+ time step           45  (   3880.00000     s)
+ --------------------------------------------------------------
+ time step           44  (   3875.00000     s)
+ --------------------------------------------------------------
+ time step           43  (   3870.00000     s)
+ --------------------------------------------------------------
+ time step           42  (   3865.00000     s)
+ --------------------------------------------------------------
+ time step           41  (   3860.00000     s)
+ --------------------------------------------------------------
+ time step           40  (   3855.00000     s)
+ --------------------------------------------------------------
+ time step           39  (   3850.00000     s)
+ --------------------------------------------------------------
+ time step           38  (   3845.00000     s)
+ --------------------------------------------------------------
+ time step           37  (   3840.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       ...time    3780.00000    
+ --------------------------------------------------------------
+ time step           36  (   3835.00000     s)
+ --------------------------------------------------------------
+ time step           35  (   3830.00000     s)
+ --------------------------------------------------------------
+ time step           34  (   3825.00000     s)
+ --------------------------------------------------------------
+ time step           33  (   3820.00000     s)
+ --------------------------------------------------------------
+ time step           32  (   3815.00000     s)
+ --------------------------------------------------------------
+ time step           31  (   3810.00000     s)
+ --------------------------------------------------------------
+ time step           30  (   3805.00000     s)
+ --------------------------------------------------------------
+ time step           29  (   3800.00000     s)
+ --------------------------------------------------------------
+ time step           28  (   3795.00000     s)
+ --------------------------------------------------------------
+ time step           27  (   3790.00000     s)
+ --------------------------------------------------------------
+ time step           26  (   3785.00000     s)
+ --------------------------------------------------------------
+ time step           25  (   3780.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       ...time    3720.00000    
+ --------------------------------------------------------------
+ time step           24  (   3775.00000     s)
+ --------------------------------------------------------------
+ time step           23  (   3770.00000     s)
+ --------------------------------------------------------------
+ time step           22  (   3765.00000     s)
+ --------------------------------------------------------------
+ time step           21  (   3760.00000     s)
+ --------------------------------------------------------------
+ time step           20  (   3755.00000     s)
+ --------------------------------------------------------------
+ time step           19  (   3750.00000     s)
+ --------------------------------------------------------------
+ time step           18  (   3745.00000     s)
+ --------------------------------------------------------------
+ time step           17  (   3740.00000     s)
+ --------------------------------------------------------------
+ time step           16  (   3735.00000     s)
+ --------------------------------------------------------------
+ time step           15  (   3730.00000     s)
+ --------------------------------------------------------------
+ time step           14  (   3725.00000     s)
+ --------------------------------------------------------------
+ time step           13  (   3720.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       ...time    3660.00000    
+ --------------------------------------------------------------
+ time step           12  (   3715.00000     s)
+ --------------------------------------------------------------
+ time step           11  (   3710.00000     s)
+ --------------------------------------------------------------
+ time step           10  (   3705.00000     s)
+ --------------------------------------------------------------
+ time step            9  (   3700.00000     s)
+ --------------------------------------------------------------
+ time step            8  (   3695.00000     s)
+ --------------------------------------------------------------
+ time step            7  (   3690.00000     s)
+ --------------------------------------------------------------
+ time step            6  (   3685.00000     s)
+ --------------------------------------------------------------
+ time step            5  (   3680.00000     s)
+ --------------------------------------------------------------
+ time step            4  (   3675.00000     s)
+ --------------------------------------------------------------
+ time step            3  (   3670.00000     s)
+ --------------------------------------------------------------
+ time step            2  (   3665.00000     s)
+ ###################################################################
+ # write out netcdf file
+
+ done writing out netcdf file
+ program terminated normally
+
+                   TRAJECT_CM1
+
+ opening traject.input
+ cm1list    =cm1list.input                                                                                                                                                                                           
+ plist      =plist.input                                                                                                                                                                                             
+ varlist    =outlist.input                                                                                                                                                                                           
+ outfile    =traj_test_1s.nc                                                                                                                                                                                         
+ begintime  =   3660.00000    
+ parcelt    =   4200.00000    
+ dt         =   1.00000000    
+ vcm1       =   20.1000004    
+
+ setting up arrays for parcel times
+ t,tp(t)=           1   3660.00000    
+ t,tp(t)=           2   3661.00000    
+ t,tp(t)=           3   3662.00000    
+ t,tp(t)=           4   3663.00000    
+ t,tp(t)=           5   3664.00000    
+ t,tp(t)=           6   3665.00000    
+ t,tp(t)=           7   3666.00000    
+ t,tp(t)=           8   3667.00000    
+ t,tp(t)=           9   3668.00000    
+ t,tp(t)=          10   3669.00000    
+ t,tp(t)=          11   3670.00000    
+ t,tp(t)=          12   3671.00000    
+ t,tp(t)=          13   3672.00000    
+ t,tp(t)=          14   3673.00000    
+ t,tp(t)=          15   3674.00000    
+ t,tp(t)=          16   3675.00000    
+ t,tp(t)=          17   3676.00000    
+ t,tp(t)=          18   3677.00000    
+ t,tp(t)=          19   3678.00000    
+ t,tp(t)=          20   3679.00000    
+ t,tp(t)=          21   3680.00000    
+ t,tp(t)=          22   3681.00000    
+ t,tp(t)=          23   3682.00000    
+ t,tp(t)=          24   3683.00000    
+ t,tp(t)=          25   3684.00000    
+ t,tp(t)=          26   3685.00000    
+ t,tp(t)=          27   3686.00000    
+ t,tp(t)=          28   3687.00000    
+ t,tp(t)=          29   3688.00000    
+ t,tp(t)=          30   3689.00000    
+ t,tp(t)=          31   3690.00000    
+ t,tp(t)=          32   3691.00000    
+ t,tp(t)=          33   3692.00000    
+ t,tp(t)=          34   3693.00000    
+ t,tp(t)=          35   3694.00000    
+ t,tp(t)=          36   3695.00000    
+ t,tp(t)=          37   3696.00000    
+ t,tp(t)=          38   3697.00000    
+ t,tp(t)=          39   3698.00000    
+ t,tp(t)=          40   3699.00000    
+ t,tp(t)=          41   3700.00000    
+ t,tp(t)=          42   3701.00000    
+ t,tp(t)=          43   3702.00000    
+ t,tp(t)=          44   3703.00000    
+ t,tp(t)=          45   3704.00000    
+ t,tp(t)=          46   3705.00000    
+ t,tp(t)=          47   3706.00000    
+ t,tp(t)=          48   3707.00000    
+ t,tp(t)=          49   3708.00000    
+ t,tp(t)=          50   3709.00000    
+ t,tp(t)=          51   3710.00000    
+ t,tp(t)=          52   3711.00000    
+ t,tp(t)=          53   3712.00000    
+ t,tp(t)=          54   3713.00000    
+ t,tp(t)=          55   3714.00000    
+ t,tp(t)=          56   3715.00000    
+ t,tp(t)=          57   3716.00000    
+ t,tp(t)=          58   3717.00000    
+ t,tp(t)=          59   3718.00000    
+ t,tp(t)=          60   3719.00000    
+ t,tp(t)=          61   3720.00000    
+ t,tp(t)=          62   3721.00000    
+ t,tp(t)=          63   3722.00000    
+ t,tp(t)=          64   3723.00000    
+ t,tp(t)=          65   3724.00000    
+ t,tp(t)=          66   3725.00000    
+ t,tp(t)=          67   3726.00000    
+ t,tp(t)=          68   3727.00000    
+ t,tp(t)=          69   3728.00000    
+ t,tp(t)=          70   3729.00000    
+ t,tp(t)=          71   3730.00000    
+ t,tp(t)=          72   3731.00000    
+ t,tp(t)=          73   3732.00000    
+ t,tp(t)=          74   3733.00000    
+ t,tp(t)=          75   3734.00000    
+ t,tp(t)=          76   3735.00000    
+ t,tp(t)=          77   3736.00000    
+ t,tp(t)=          78   3737.00000    
+ t,tp(t)=          79   3738.00000    
+ t,tp(t)=          80   3739.00000    
+ t,tp(t)=          81   3740.00000    
+ t,tp(t)=          82   3741.00000    
+ t,tp(t)=          83   3742.00000    
+ t,tp(t)=          84   3743.00000    
+ t,tp(t)=          85   3744.00000    
+ t,tp(t)=          86   3745.00000    
+ t,tp(t)=          87   3746.00000    
+ t,tp(t)=          88   3747.00000    
+ t,tp(t)=          89   3748.00000    
+ t,tp(t)=          90   3749.00000    
+ t,tp(t)=          91   3750.00000    
+ t,tp(t)=          92   3751.00000    
+ t,tp(t)=          93   3752.00000    
+ t,tp(t)=          94   3753.00000    
+ t,tp(t)=          95   3754.00000    
+ t,tp(t)=          96   3755.00000    
+ t,tp(t)=          97   3756.00000    
+ t,tp(t)=          98   3757.00000    
+ t,tp(t)=          99   3758.00000    
+ t,tp(t)=         100   3759.00000    
+ t,tp(t)=         101   3760.00000    
+ t,tp(t)=         102   3761.00000    
+ t,tp(t)=         103   3762.00000    
+ t,tp(t)=         104   3763.00000    
+ t,tp(t)=         105   3764.00000    
+ t,tp(t)=         106   3765.00000    
+ t,tp(t)=         107   3766.00000    
+ t,tp(t)=         108   3767.00000    
+ t,tp(t)=         109   3768.00000    
+ t,tp(t)=         110   3769.00000    
+ t,tp(t)=         111   3770.00000    
+ t,tp(t)=         112   3771.00000    
+ t,tp(t)=         113   3772.00000    
+ t,tp(t)=         114   3773.00000    
+ t,tp(t)=         115   3774.00000    
+ t,tp(t)=         116   3775.00000    
+ t,tp(t)=         117   3776.00000    
+ t,tp(t)=         118   3777.00000    
+ t,tp(t)=         119   3778.00000    
+ t,tp(t)=         120   3779.00000    
+ t,tp(t)=         121   3780.00000    
+ t,tp(t)=         122   3781.00000    
+ t,tp(t)=         123   3782.00000    
+ t,tp(t)=         124   3783.00000    
+ t,tp(t)=         125   3784.00000    
+ t,tp(t)=         126   3785.00000    
+ t,tp(t)=         127   3786.00000    
+ t,tp(t)=         128   3787.00000    
+ t,tp(t)=         129   3788.00000    
+ t,tp(t)=         130   3789.00000    
+ t,tp(t)=         131   3790.00000    
+ t,tp(t)=         132   3791.00000    
+ t,tp(t)=         133   3792.00000    
+ t,tp(t)=         134   3793.00000    
+ t,tp(t)=         135   3794.00000    
+ t,tp(t)=         136   3795.00000    
+ t,tp(t)=         137   3796.00000    
+ t,tp(t)=         138   3797.00000    
+ t,tp(t)=         139   3798.00000    
+ t,tp(t)=         140   3799.00000    
+ t,tp(t)=         141   3800.00000    
+ t,tp(t)=         142   3801.00000    
+ t,tp(t)=         143   3802.00000    
+ t,tp(t)=         144   3803.00000    
+ t,tp(t)=         145   3804.00000    
+ t,tp(t)=         146   3805.00000    
+ t,tp(t)=         147   3806.00000    
+ t,tp(t)=         148   3807.00000    
+ t,tp(t)=         149   3808.00000    
+ t,tp(t)=         150   3809.00000    
+ t,tp(t)=         151   3810.00000    
+ t,tp(t)=         152   3811.00000    
+ t,tp(t)=         153   3812.00000    
+ t,tp(t)=         154   3813.00000    
+ t,tp(t)=         155   3814.00000    
+ t,tp(t)=         156   3815.00000    
+ t,tp(t)=         157   3816.00000    
+ t,tp(t)=         158   3817.00000    
+ t,tp(t)=         159   3818.00000    
+ t,tp(t)=         160   3819.00000    
+ t,tp(t)=         161   3820.00000    
+ t,tp(t)=         162   3821.00000    
+ t,tp(t)=         163   3822.00000    
+ t,tp(t)=         164   3823.00000    
+ t,tp(t)=         165   3824.00000    
+ t,tp(t)=         166   3825.00000    
+ t,tp(t)=         167   3826.00000    
+ t,tp(t)=         168   3827.00000    
+ t,tp(t)=         169   3828.00000    
+ t,tp(t)=         170   3829.00000    
+ t,tp(t)=         171   3830.00000    
+ t,tp(t)=         172   3831.00000    
+ t,tp(t)=         173   3832.00000    
+ t,tp(t)=         174   3833.00000    
+ t,tp(t)=         175   3834.00000    
+ t,tp(t)=         176   3835.00000    
+ t,tp(t)=         177   3836.00000    
+ t,tp(t)=         178   3837.00000    
+ t,tp(t)=         179   3838.00000    
+ t,tp(t)=         180   3839.00000    
+ t,tp(t)=         181   3840.00000    
+ t,tp(t)=         182   3841.00000    
+ t,tp(t)=         183   3842.00000    
+ t,tp(t)=         184   3843.00000    
+ t,tp(t)=         185   3844.00000    
+ t,tp(t)=         186   3845.00000    
+ t,tp(t)=         187   3846.00000    
+ t,tp(t)=         188   3847.00000    
+ t,tp(t)=         189   3848.00000    
+ t,tp(t)=         190   3849.00000    
+ t,tp(t)=         191   3850.00000    
+ t,tp(t)=         192   3851.00000    
+ t,tp(t)=         193   3852.00000    
+ t,tp(t)=         194   3853.00000    
+ t,tp(t)=         195   3854.00000    
+ t,tp(t)=         196   3855.00000    
+ t,tp(t)=         197   3856.00000    
+ t,tp(t)=         198   3857.00000    
+ t,tp(t)=         199   3858.00000    
+ t,tp(t)=         200   3859.00000    
+ t,tp(t)=         201   3860.00000    
+ t,tp(t)=         202   3861.00000    
+ t,tp(t)=         203   3862.00000    
+ t,tp(t)=         204   3863.00000    
+ t,tp(t)=         205   3864.00000    
+ t,tp(t)=         206   3865.00000    
+ t,tp(t)=         207   3866.00000    
+ t,tp(t)=         208   3867.00000    
+ t,tp(t)=         209   3868.00000    
+ t,tp(t)=         210   3869.00000    
+ t,tp(t)=         211   3870.00000    
+ t,tp(t)=         212   3871.00000    
+ t,tp(t)=         213   3872.00000    
+ t,tp(t)=         214   3873.00000    
+ t,tp(t)=         215   3874.00000    
+ t,tp(t)=         216   3875.00000    
+ t,tp(t)=         217   3876.00000    
+ t,tp(t)=         218   3877.00000    
+ t,tp(t)=         219   3878.00000    
+ t,tp(t)=         220   3879.00000    
+ t,tp(t)=         221   3880.00000    
+ t,tp(t)=         222   3881.00000    
+ t,tp(t)=         223   3882.00000    
+ t,tp(t)=         224   3883.00000    
+ t,tp(t)=         225   3884.00000    
+ t,tp(t)=         226   3885.00000    
+ t,tp(t)=         227   3886.00000    
+ t,tp(t)=         228   3887.00000    
+ t,tp(t)=         229   3888.00000    
+ t,tp(t)=         230   3889.00000    
+ t,tp(t)=         231   3890.00000    
+ t,tp(t)=         232   3891.00000    
+ t,tp(t)=         233   3892.00000    
+ t,tp(t)=         234   3893.00000    
+ t,tp(t)=         235   3894.00000    
+ t,tp(t)=         236   3895.00000    
+ t,tp(t)=         237   3896.00000    
+ t,tp(t)=         238   3897.00000    
+ t,tp(t)=         239   3898.00000    
+ t,tp(t)=         240   3899.00000    
+ t,tp(t)=         241   3900.00000    
+ t,tp(t)=         242   3901.00000    
+ t,tp(t)=         243   3902.00000    
+ t,tp(t)=         244   3903.00000    
+ t,tp(t)=         245   3904.00000    
+ t,tp(t)=         246   3905.00000    
+ t,tp(t)=         247   3906.00000    
+ t,tp(t)=         248   3907.00000    
+ t,tp(t)=         249   3908.00000    
+ t,tp(t)=         250   3909.00000    
+ t,tp(t)=         251   3910.00000    
+ t,tp(t)=         252   3911.00000    
+ t,tp(t)=         253   3912.00000    
+ t,tp(t)=         254   3913.00000    
+ t,tp(t)=         255   3914.00000    
+ t,tp(t)=         256   3915.00000    
+ t,tp(t)=         257   3916.00000    
+ t,tp(t)=         258   3917.00000    
+ t,tp(t)=         259   3918.00000    
+ t,tp(t)=         260   3919.00000    
+ t,tp(t)=         261   3920.00000    
+ t,tp(t)=         262   3921.00000    
+ t,tp(t)=         263   3922.00000    
+ t,tp(t)=         264   3923.00000    
+ t,tp(t)=         265   3924.00000    
+ t,tp(t)=         266   3925.00000    
+ t,tp(t)=         267   3926.00000    
+ t,tp(t)=         268   3927.00000    
+ t,tp(t)=         269   3928.00000    
+ t,tp(t)=         270   3929.00000    
+ t,tp(t)=         271   3930.00000    
+ t,tp(t)=         272   3931.00000    
+ t,tp(t)=         273   3932.00000    
+ t,tp(t)=         274   3933.00000    
+ t,tp(t)=         275   3934.00000    
+ t,tp(t)=         276   3935.00000    
+ t,tp(t)=         277   3936.00000    
+ t,tp(t)=         278   3937.00000    
+ t,tp(t)=         279   3938.00000    
+ t,tp(t)=         280   3939.00000    
+ t,tp(t)=         281   3940.00000    
+ t,tp(t)=         282   3941.00000    
+ t,tp(t)=         283   3942.00000    
+ t,tp(t)=         284   3943.00000    
+ t,tp(t)=         285   3944.00000    
+ t,tp(t)=         286   3945.00000    
+ t,tp(t)=         287   3946.00000    
+ t,tp(t)=         288   3947.00000    
+ t,tp(t)=         289   3948.00000    
+ t,tp(t)=         290   3949.00000    
+ t,tp(t)=         291   3950.00000    
+ t,tp(t)=         292   3951.00000    
+ t,tp(t)=         293   3952.00000    
+ t,tp(t)=         294   3953.00000    
+ t,tp(t)=         295   3954.00000    
+ t,tp(t)=         296   3955.00000    
+ t,tp(t)=         297   3956.00000    
+ t,tp(t)=         298   3957.00000    
+ t,tp(t)=         299   3958.00000    
+ t,tp(t)=         300   3959.00000    
+ t,tp(t)=         301   3960.00000    
+ t,tp(t)=         302   3961.00000    
+ t,tp(t)=         303   3962.00000    
+ t,tp(t)=         304   3963.00000    
+ t,tp(t)=         305   3964.00000    
+ t,tp(t)=         306   3965.00000    
+ t,tp(t)=         307   3966.00000    
+ t,tp(t)=         308   3967.00000    
+ t,tp(t)=         309   3968.00000    
+ t,tp(t)=         310   3969.00000    
+ t,tp(t)=         311   3970.00000    
+ t,tp(t)=         312   3971.00000    
+ t,tp(t)=         313   3972.00000    
+ t,tp(t)=         314   3973.00000    
+ t,tp(t)=         315   3974.00000    
+ t,tp(t)=         316   3975.00000    
+ t,tp(t)=         317   3976.00000    
+ t,tp(t)=         318   3977.00000    
+ t,tp(t)=         319   3978.00000    
+ t,tp(t)=         320   3979.00000    
+ t,tp(t)=         321   3980.00000    
+ t,tp(t)=         322   3981.00000    
+ t,tp(t)=         323   3982.00000    
+ t,tp(t)=         324   3983.00000    
+ t,tp(t)=         325   3984.00000    
+ t,tp(t)=         326   3985.00000    
+ t,tp(t)=         327   3986.00000    
+ t,tp(t)=         328   3987.00000    
+ t,tp(t)=         329   3988.00000    
+ t,tp(t)=         330   3989.00000    
+ t,tp(t)=         331   3990.00000    
+ t,tp(t)=         332   3991.00000    
+ t,tp(t)=         333   3992.00000    
+ t,tp(t)=         334   3993.00000    
+ t,tp(t)=         335   3994.00000    
+ t,tp(t)=         336   3995.00000    
+ t,tp(t)=         337   3996.00000    
+ t,tp(t)=         338   3997.00000    
+ t,tp(t)=         339   3998.00000    
+ t,tp(t)=         340   3999.00000    
+ t,tp(t)=         341   4000.00000    
+ t,tp(t)=         342   4001.00000    
+ t,tp(t)=         343   4002.00000    
+ t,tp(t)=         344   4003.00000    
+ t,tp(t)=         345   4004.00000    
+ t,tp(t)=         346   4005.00000    
+ t,tp(t)=         347   4006.00000    
+ t,tp(t)=         348   4007.00000    
+ t,tp(t)=         349   4008.00000    
+ t,tp(t)=         350   4009.00000    
+ t,tp(t)=         351   4010.00000    
+ t,tp(t)=         352   4011.00000    
+ t,tp(t)=         353   4012.00000    
+ t,tp(t)=         354   4013.00000    
+ t,tp(t)=         355   4014.00000    
+ t,tp(t)=         356   4015.00000    
+ t,tp(t)=         357   4016.00000    
+ t,tp(t)=         358   4017.00000    
+ t,tp(t)=         359   4018.00000    
+ t,tp(t)=         360   4019.00000    
+ t,tp(t)=         361   4020.00000    
+ t,tp(t)=         362   4021.00000    
+ t,tp(t)=         363   4022.00000    
+ t,tp(t)=         364   4023.00000    
+ t,tp(t)=         365   4024.00000    
+ t,tp(t)=         366   4025.00000    
+ t,tp(t)=         367   4026.00000    
+ t,tp(t)=         368   4027.00000    
+ t,tp(t)=         369   4028.00000    
+ t,tp(t)=         370   4029.00000    
+ t,tp(t)=         371   4030.00000    
+ t,tp(t)=         372   4031.00000    
+ t,tp(t)=         373   4032.00000    
+ t,tp(t)=         374   4033.00000    
+ t,tp(t)=         375   4034.00000    
+ t,tp(t)=         376   4035.00000    
+ t,tp(t)=         377   4036.00000    
+ t,tp(t)=         378   4037.00000    
+ t,tp(t)=         379   4038.00000    
+ t,tp(t)=         380   4039.00000    
+ t,tp(t)=         381   4040.00000    
+ t,tp(t)=         382   4041.00000    
+ t,tp(t)=         383   4042.00000    
+ t,tp(t)=         384   4043.00000    
+ t,tp(t)=         385   4044.00000    
+ t,tp(t)=         386   4045.00000    
+ t,tp(t)=         387   4046.00000    
+ t,tp(t)=         388   4047.00000    
+ t,tp(t)=         389   4048.00000    
+ t,tp(t)=         390   4049.00000    
+ t,tp(t)=         391   4050.00000    
+ t,tp(t)=         392   4051.00000    
+ t,tp(t)=         393   4052.00000    
+ t,tp(t)=         394   4053.00000    
+ t,tp(t)=         395   4054.00000    
+ t,tp(t)=         396   4055.00000    
+ t,tp(t)=         397   4056.00000    
+ t,tp(t)=         398   4057.00000    
+ t,tp(t)=         399   4058.00000    
+ t,tp(t)=         400   4059.00000    
+ t,tp(t)=         401   4060.00000    
+ t,tp(t)=         402   4061.00000    
+ t,tp(t)=         403   4062.00000    
+ t,tp(t)=         404   4063.00000    
+ t,tp(t)=         405   4064.00000    
+ t,tp(t)=         406   4065.00000    
+ t,tp(t)=         407   4066.00000    
+ t,tp(t)=         408   4067.00000    
+ t,tp(t)=         409   4068.00000    
+ t,tp(t)=         410   4069.00000    
+ t,tp(t)=         411   4070.00000    
+ t,tp(t)=         412   4071.00000    
+ t,tp(t)=         413   4072.00000    
+ t,tp(t)=         414   4073.00000    
+ t,tp(t)=         415   4074.00000    
+ t,tp(t)=         416   4075.00000    
+ t,tp(t)=         417   4076.00000    
+ t,tp(t)=         418   4077.00000    
+ t,tp(t)=         419   4078.00000    
+ t,tp(t)=         420   4079.00000    
+ t,tp(t)=         421   4080.00000    
+ t,tp(t)=         422   4081.00000    
+ t,tp(t)=         423   4082.00000    
+ t,tp(t)=         424   4083.00000    
+ t,tp(t)=         425   4084.00000    
+ t,tp(t)=         426   4085.00000    
+ t,tp(t)=         427   4086.00000    
+ t,tp(t)=         428   4087.00000    
+ t,tp(t)=         429   4088.00000    
+ t,tp(t)=         430   4089.00000    
+ t,tp(t)=         431   4090.00000    
+ t,tp(t)=         432   4091.00000    
+ t,tp(t)=         433   4092.00000    
+ t,tp(t)=         434   4093.00000    
+ t,tp(t)=         435   4094.00000    
+ t,tp(t)=         436   4095.00000    
+ t,tp(t)=         437   4096.00000    
+ t,tp(t)=         438   4097.00000    
+ t,tp(t)=         439   4098.00000    
+ t,tp(t)=         440   4099.00000    
+ t,tp(t)=         441   4100.00000    
+ t,tp(t)=         442   4101.00000    
+ t,tp(t)=         443   4102.00000    
+ t,tp(t)=         444   4103.00000    
+ t,tp(t)=         445   4104.00000    
+ t,tp(t)=         446   4105.00000    
+ t,tp(t)=         447   4106.00000    
+ t,tp(t)=         448   4107.00000    
+ t,tp(t)=         449   4108.00000    
+ t,tp(t)=         450   4109.00000    
+ t,tp(t)=         451   4110.00000    
+ t,tp(t)=         452   4111.00000    
+ t,tp(t)=         453   4112.00000    
+ t,tp(t)=         454   4113.00000    
+ t,tp(t)=         455   4114.00000    
+ t,tp(t)=         456   4115.00000    
+ t,tp(t)=         457   4116.00000    
+ t,tp(t)=         458   4117.00000    
+ t,tp(t)=         459   4118.00000    
+ t,tp(t)=         460   4119.00000    
+ t,tp(t)=         461   4120.00000    
+ t,tp(t)=         462   4121.00000    
+ t,tp(t)=         463   4122.00000    
+ t,tp(t)=         464   4123.00000    
+ t,tp(t)=         465   4124.00000    
+ t,tp(t)=         466   4125.00000    
+ t,tp(t)=         467   4126.00000    
+ t,tp(t)=         468   4127.00000    
+ t,tp(t)=         469   4128.00000    
+ t,tp(t)=         470   4129.00000    
+ t,tp(t)=         471   4130.00000    
+ t,tp(t)=         472   4131.00000    
+ t,tp(t)=         473   4132.00000    
+ t,tp(t)=         474   4133.00000    
+ t,tp(t)=         475   4134.00000    
+ t,tp(t)=         476   4135.00000    
+ t,tp(t)=         477   4136.00000    
+ t,tp(t)=         478   4137.00000    
+ t,tp(t)=         479   4138.00000    
+ t,tp(t)=         480   4139.00000    
+ t,tp(t)=         481   4140.00000    
+ t,tp(t)=         482   4141.00000    
+ t,tp(t)=         483   4142.00000    
+ t,tp(t)=         484   4143.00000    
+ t,tp(t)=         485   4144.00000    
+ t,tp(t)=         486   4145.00000    
+ t,tp(t)=         487   4146.00000    
+ t,tp(t)=         488   4147.00000    
+ t,tp(t)=         489   4148.00000    
+ t,tp(t)=         490   4149.00000    
+ t,tp(t)=         491   4150.00000    
+ t,tp(t)=         492   4151.00000    
+ t,tp(t)=         493   4152.00000    
+ t,tp(t)=         494   4153.00000    
+ t,tp(t)=         495   4154.00000    
+ t,tp(t)=         496   4155.00000    
+ t,tp(t)=         497   4156.00000    
+ t,tp(t)=         498   4157.00000    
+ t,tp(t)=         499   4158.00000    
+ t,tp(t)=         500   4159.00000    
+ t,tp(t)=         501   4160.00000    
+ t,tp(t)=         502   4161.00000    
+ t,tp(t)=         503   4162.00000    
+ t,tp(t)=         504   4163.00000    
+ t,tp(t)=         505   4164.00000    
+ t,tp(t)=         506   4165.00000    
+ t,tp(t)=         507   4166.00000    
+ t,tp(t)=         508   4167.00000    
+ t,tp(t)=         509   4168.00000    
+ t,tp(t)=         510   4169.00000    
+ t,tp(t)=         511   4170.00000    
+ t,tp(t)=         512   4171.00000    
+ t,tp(t)=         513   4172.00000    
+ t,tp(t)=         514   4173.00000    
+ t,tp(t)=         515   4174.00000    
+ t,tp(t)=         516   4175.00000    
+ t,tp(t)=         517   4176.00000    
+ t,tp(t)=         518   4177.00000    
+ t,tp(t)=         519   4178.00000    
+ t,tp(t)=         520   4179.00000    
+ t,tp(t)=         521   4180.00000    
+ t,tp(t)=         522   4181.00000    
+ t,tp(t)=         523   4182.00000    
+ t,tp(t)=         524   4183.00000    
+ t,tp(t)=         525   4184.00000    
+ t,tp(t)=         526   4185.00000    
+ t,tp(t)=         527   4186.00000    
+ t,tp(t)=         528   4187.00000    
+ t,tp(t)=         529   4188.00000    
+ t,tp(t)=         530   4189.00000    
+ t,tp(t)=         531   4190.00000    
+ t,tp(t)=         532   4191.00000    
+ t,tp(t)=         533   4192.00000    
+ t,tp(t)=         534   4193.00000    
+ t,tp(t)=         535   4194.00000    
+ t,tp(t)=         536   4195.00000    
+ t,tp(t)=         537   4196.00000    
+ t,tp(t)=         538   4197.00000    
+ t,tp(t)=         539   4198.00000    
+ t,tp(t)=         540   4199.00000    
+ t,tp(t)=         541   4200.00000    
+ reading list of cm1 files:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       
+
+ reading times:
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                          3660.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                          3720.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                          3780.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                          3840.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                          3900.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                          3960.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                          4020.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                          4080.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                          4140.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                          4200.00000    
+ /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                          4260.00000    
+
+ reading list of variables to interpolate:
+ th        
+ prs       
+ buoyancy  
+ qv        
+ qr        
+ qc        
+ qi        
+ qi2       
+ tt_cond   
+ tt_evac   
+ tt_evar   
+ tt_frz    
+ tt_melt   
+ tt_dep    
+ tt_subl   
+ reading dimensions..
+
+ reading dimensions
+
+
+ ni,nj,nk=         600         600          99
+ nip1,njp1,nkp1=         601         601         100
+
+ reading space..
+ reading space-files..
+
+ reading in spatial variables
+
+ ....xh....
+ ....xf....
+ ....yh....
+ ....yf....
+ ....zh....
+ ....zf....
+ ....mzh....
+ ....mzf....
+
+ .......done reading in space
+
+ setting up stretching arrays
+ setting up some wind arrays
+
+ reading parcels
+           3  parcels
+ creating traj_test_1s.nc                                                                                                                                                                                         
+ ntimes=         541
+ nparcels=           3
+ setting up trajectory arrays
+ number of backward integration steps =          541
+ parcel            1  starts at x,y,z=  -9986.00000     m,   3943.00000     m,   38.0000000     m
+ parcel            2  starts at x,y,z=  -8856.00000     m,   4587.00000     m,   45.0000000     m
+ parcel            3  starts at x,y,z=  -8494.00000     m,   3055.00000     m,   32.0000000     m
+
+ ################################################################
+ starting backward trajectory calculations
+
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000024.nc                                                                                       ...time    4260.00000    
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000023.nc                                                                                       ...time    4200.00000    
+ --------------------------------------------------------------
+ time step          541  (   4200.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000022.nc                                                                                       ...time    4140.00000    
+ --------------------------------------------------------------
+ time step          540  (   4199.00000     s)
+ --------------------------------------------------------------
+ time step          539  (   4198.00000     s)
+ --------------------------------------------------------------
+ time step          538  (   4197.00000     s)
+ --------------------------------------------------------------
+ time step          537  (   4196.00000     s)
+ --------------------------------------------------------------
+ time step          536  (   4195.00000     s)
+ --------------------------------------------------------------
+ time step          535  (   4194.00000     s)
+ --------------------------------------------------------------
+ time step          534  (   4193.00000     s)
+ --------------------------------------------------------------
+ time step          533  (   4192.00000     s)
+ --------------------------------------------------------------
+ time step          532  (   4191.00000     s)
+ --------------------------------------------------------------
+ time step          531  (   4190.00000     s)
+ --------------------------------------------------------------
+ time step          530  (   4189.00000     s)
+ --------------------------------------------------------------
+ time step          529  (   4188.00000     s)
+ --------------------------------------------------------------
+ time step          528  (   4187.00000     s)
+ --------------------------------------------------------------
+ time step          527  (   4186.00000     s)
+ --------------------------------------------------------------
+ time step          526  (   4185.00000     s)
+ --------------------------------------------------------------
+ time step          525  (   4184.00000     s)
+ --------------------------------------------------------------
+ time step          524  (   4183.00000     s)
+ --------------------------------------------------------------
+ time step          523  (   4182.00000     s)
+ --------------------------------------------------------------
+ time step          522  (   4181.00000     s)
+ --------------------------------------------------------------
+ time step          521  (   4180.00000     s)
+ --------------------------------------------------------------
+ time step          520  (   4179.00000     s)
+ --------------------------------------------------------------
+ time step          519  (   4178.00000     s)
+ --------------------------------------------------------------
+ time step          518  (   4177.00000     s)
+ --------------------------------------------------------------
+ time step          517  (   4176.00000     s)
+ --------------------------------------------------------------
+ time step          516  (   4175.00000     s)
+ --------------------------------------------------------------
+ time step          515  (   4174.00000     s)
+ --------------------------------------------------------------
+ time step          514  (   4173.00000     s)
+ --------------------------------------------------------------
+ time step          513  (   4172.00000     s)
+ --------------------------------------------------------------
+ time step          512  (   4171.00000     s)
+ --------------------------------------------------------------
+ time step          511  (   4170.00000     s)
+ --------------------------------------------------------------
+ time step          510  (   4169.00000     s)
+ --------------------------------------------------------------
+ time step          509  (   4168.00000     s)
+ --------------------------------------------------------------
+ time step          508  (   4167.00000     s)
+ --------------------------------------------------------------
+ time step          507  (   4166.00000     s)
+ --------------------------------------------------------------
+ time step          506  (   4165.00000     s)
+ --------------------------------------------------------------
+ time step          505  (   4164.00000     s)
+ --------------------------------------------------------------
+ time step          504  (   4163.00000     s)
+ --------------------------------------------------------------
+ time step          503  (   4162.00000     s)
+ --------------------------------------------------------------
+ time step          502  (   4161.00000     s)
+ --------------------------------------------------------------
+ time step          501  (   4160.00000     s)
+ --------------------------------------------------------------
+ time step          500  (   4159.00000     s)
+ --------------------------------------------------------------
+ time step          499  (   4158.00000     s)
+ --------------------------------------------------------------
+ time step          498  (   4157.00000     s)
+ --------------------------------------------------------------
+ time step          497  (   4156.00000     s)
+ --------------------------------------------------------------
+ time step          496  (   4155.00000     s)
+ --------------------------------------------------------------
+ time step          495  (   4154.00000     s)
+ --------------------------------------------------------------
+ time step          494  (   4153.00000     s)
+ --------------------------------------------------------------
+ time step          493  (   4152.00000     s)
+ --------------------------------------------------------------
+ time step          492  (   4151.00000     s)
+ --------------------------------------------------------------
+ time step          491  (   4150.00000     s)
+ --------------------------------------------------------------
+ time step          490  (   4149.00000     s)
+ --------------------------------------------------------------
+ time step          489  (   4148.00000     s)
+ --------------------------------------------------------------
+ time step          488  (   4147.00000     s)
+ --------------------------------------------------------------
+ time step          487  (   4146.00000     s)
+ --------------------------------------------------------------
+ time step          486  (   4145.00000     s)
+ --------------------------------------------------------------
+ time step          485  (   4144.00000     s)
+ --------------------------------------------------------------
+ time step          484  (   4143.00000     s)
+ --------------------------------------------------------------
+ time step          483  (   4142.00000     s)
+ --------------------------------------------------------------
+ time step          482  (   4141.00000     s)
+ --------------------------------------------------------------
+ time step          481  (   4140.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000021.nc                                                                                       ...time    4080.00000    
+ --------------------------------------------------------------
+ time step          480  (   4139.00000     s)
+ --------------------------------------------------------------
+ time step          479  (   4138.00000     s)
+ --------------------------------------------------------------
+ time step          478  (   4137.00000     s)
+ --------------------------------------------------------------
+ time step          477  (   4136.00000     s)
+ --------------------------------------------------------------
+ time step          476  (   4135.00000     s)
+ --------------------------------------------------------------
+ time step          475  (   4134.00000     s)
+ --------------------------------------------------------------
+ time step          474  (   4133.00000     s)
+ --------------------------------------------------------------
+ time step          473  (   4132.00000     s)
+ --------------------------------------------------------------
+ time step          472  (   4131.00000     s)
+ --------------------------------------------------------------
+ time step          471  (   4130.00000     s)
+ --------------------------------------------------------------
+ time step          470  (   4129.00000     s)
+ --------------------------------------------------------------
+ time step          469  (   4128.00000     s)
+ --------------------------------------------------------------
+ time step          468  (   4127.00000     s)
+ --------------------------------------------------------------
+ time step          467  (   4126.00000     s)
+ --------------------------------------------------------------
+ time step          466  (   4125.00000     s)
+ --------------------------------------------------------------
+ time step          465  (   4124.00000     s)
+ --------------------------------------------------------------
+ time step          464  (   4123.00000     s)
+ --------------------------------------------------------------
+ time step          463  (   4122.00000     s)
+ --------------------------------------------------------------
+ time step          462  (   4121.00000     s)
+ --------------------------------------------------------------
+ time step          461  (   4120.00000     s)
+ --------------------------------------------------------------
+ time step          460  (   4119.00000     s)
+ --------------------------------------------------------------
+ time step          459  (   4118.00000     s)
+ --------------------------------------------------------------
+ time step          458  (   4117.00000     s)
+ --------------------------------------------------------------
+ time step          457  (   4116.00000     s)
+ --------------------------------------------------------------
+ time step          456  (   4115.00000     s)
+ --------------------------------------------------------------
+ time step          455  (   4114.00000     s)
+ --------------------------------------------------------------
+ time step          454  (   4113.00000     s)
+ --------------------------------------------------------------
+ time step          453  (   4112.00000     s)
+ --------------------------------------------------------------
+ time step          452  (   4111.00000     s)
+ --------------------------------------------------------------
+ time step          451  (   4110.00000     s)
+ --------------------------------------------------------------
+ time step          450  (   4109.00000     s)
+ --------------------------------------------------------------
+ time step          449  (   4108.00000     s)
+ --------------------------------------------------------------
+ time step          448  (   4107.00000     s)
+ --------------------------------------------------------------
+ time step          447  (   4106.00000     s)
+ --------------------------------------------------------------
+ time step          446  (   4105.00000     s)
+ --------------------------------------------------------------
+ time step          445  (   4104.00000     s)
+ --------------------------------------------------------------
+ time step          444  (   4103.00000     s)
+ --------------------------------------------------------------
+ time step          443  (   4102.00000     s)
+ --------------------------------------------------------------
+ time step          442  (   4101.00000     s)
+ --------------------------------------------------------------
+ time step          441  (   4100.00000     s)
+ --------------------------------------------------------------
+ time step          440  (   4099.00000     s)
+ --------------------------------------------------------------
+ time step          439  (   4098.00000     s)
+ --------------------------------------------------------------
+ time step          438  (   4097.00000     s)
+ --------------------------------------------------------------
+ time step          437  (   4096.00000     s)
+ --------------------------------------------------------------
+ time step          436  (   4095.00000     s)
+ --------------------------------------------------------------
+ time step          435  (   4094.00000     s)
+ --------------------------------------------------------------
+ time step          434  (   4093.00000     s)
+ --------------------------------------------------------------
+ time step          433  (   4092.00000     s)
+ --------------------------------------------------------------
+ time step          432  (   4091.00000     s)
+ --------------------------------------------------------------
+ time step          431  (   4090.00000     s)
+ --------------------------------------------------------------
+ time step          430  (   4089.00000     s)
+ --------------------------------------------------------------
+ time step          429  (   4088.00000     s)
+ --------------------------------------------------------------
+ time step          428  (   4087.00000     s)
+ --------------------------------------------------------------
+ time step          427  (   4086.00000     s)
+ --------------------------------------------------------------
+ time step          426  (   4085.00000     s)
+ --------------------------------------------------------------
+ time step          425  (   4084.00000     s)
+ --------------------------------------------------------------
+ time step          424  (   4083.00000     s)
+ --------------------------------------------------------------
+ time step          423  (   4082.00000     s)
+ --------------------------------------------------------------
+ time step          422  (   4081.00000     s)
+ --------------------------------------------------------------
+ time step          421  (   4080.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000020.nc                                                                                       ...time    4020.00000    
+ --------------------------------------------------------------
+ time step          420  (   4079.00000     s)
+ --------------------------------------------------------------
+ time step          419  (   4078.00000     s)
+ --------------------------------------------------------------
+ time step          418  (   4077.00000     s)
+ --------------------------------------------------------------
+ time step          417  (   4076.00000     s)
+ --------------------------------------------------------------
+ time step          416  (   4075.00000     s)
+ --------------------------------------------------------------
+ time step          415  (   4074.00000     s)
+ --------------------------------------------------------------
+ time step          414  (   4073.00000     s)
+ --------------------------------------------------------------
+ time step          413  (   4072.00000     s)
+ --------------------------------------------------------------
+ time step          412  (   4071.00000     s)
+ --------------------------------------------------------------
+ time step          411  (   4070.00000     s)
+ --------------------------------------------------------------
+ time step          410  (   4069.00000     s)
+ --------------------------------------------------------------
+ time step          409  (   4068.00000     s)
+ --------------------------------------------------------------
+ time step          408  (   4067.00000     s)
+ --------------------------------------------------------------
+ time step          407  (   4066.00000     s)
+ --------------------------------------------------------------
+ time step          406  (   4065.00000     s)
+ --------------------------------------------------------------
+ time step          405  (   4064.00000     s)
+ --------------------------------------------------------------
+ time step          404  (   4063.00000     s)
+ --------------------------------------------------------------
+ time step          403  (   4062.00000     s)
+ --------------------------------------------------------------
+ time step          402  (   4061.00000     s)
+ --------------------------------------------------------------
+ time step          401  (   4060.00000     s)
+ --------------------------------------------------------------
+ time step          400  (   4059.00000     s)
+ --------------------------------------------------------------
+ time step          399  (   4058.00000     s)
+ --------------------------------------------------------------
+ time step          398  (   4057.00000     s)
+ --------------------------------------------------------------
+ time step          397  (   4056.00000     s)
+ --------------------------------------------------------------
+ time step          396  (   4055.00000     s)
+ --------------------------------------------------------------
+ time step          395  (   4054.00000     s)
+ --------------------------------------------------------------
+ time step          394  (   4053.00000     s)
+ --------------------------------------------------------------
+ time step          393  (   4052.00000     s)
+ --------------------------------------------------------------
+ time step          392  (   4051.00000     s)
+ --------------------------------------------------------------
+ time step          391  (   4050.00000     s)
+ --------------------------------------------------------------
+ time step          390  (   4049.00000     s)
+ --------------------------------------------------------------
+ time step          389  (   4048.00000     s)
+ --------------------------------------------------------------
+ time step          388  (   4047.00000     s)
+ --------------------------------------------------------------
+ time step          387  (   4046.00000     s)
+ --------------------------------------------------------------
+ time step          386  (   4045.00000     s)
+ --------------------------------------------------------------
+ time step          385  (   4044.00000     s)
+ --------------------------------------------------------------
+ time step          384  (   4043.00000     s)
+ --------------------------------------------------------------
+ time step          383  (   4042.00000     s)
+ --------------------------------------------------------------
+ time step          382  (   4041.00000     s)
+ --------------------------------------------------------------
+ time step          381  (   4040.00000     s)
+ --------------------------------------------------------------
+ time step          380  (   4039.00000     s)
+ --------------------------------------------------------------
+ time step          379  (   4038.00000     s)
+ --------------------------------------------------------------
+ time step          378  (   4037.00000     s)
+ --------------------------------------------------------------
+ time step          377  (   4036.00000     s)
+ --------------------------------------------------------------
+ time step          376  (   4035.00000     s)
+ --------------------------------------------------------------
+ time step          375  (   4034.00000     s)
+ --------------------------------------------------------------
+ time step          374  (   4033.00000     s)
+ --------------------------------------------------------------
+ time step          373  (   4032.00000     s)
+ --------------------------------------------------------------
+ time step          372  (   4031.00000     s)
+ --------------------------------------------------------------
+ time step          371  (   4030.00000     s)
+ --------------------------------------------------------------
+ time step          370  (   4029.00000     s)
+ --------------------------------------------------------------
+ time step          369  (   4028.00000     s)
+ --------------------------------------------------------------
+ time step          368  (   4027.00000     s)
+ --------------------------------------------------------------
+ time step          367  (   4026.00000     s)
+ --------------------------------------------------------------
+ time step          366  (   4025.00000     s)
+ --------------------------------------------------------------
+ time step          365  (   4024.00000     s)
+ --------------------------------------------------------------
+ time step          364  (   4023.00000     s)
+ --------------------------------------------------------------
+ time step          363  (   4022.00000     s)
+ --------------------------------------------------------------
+ time step          362  (   4021.00000     s)
+ --------------------------------------------------------------
+ time step          361  (   4020.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000019.nc                                                                                       ...time    3960.00000    
+ --------------------------------------------------------------
+ time step          360  (   4019.00000     s)
+ --------------------------------------------------------------
+ time step          359  (   4018.00000     s)
+ --------------------------------------------------------------
+ time step          358  (   4017.00000     s)
+ --------------------------------------------------------------
+ time step          357  (   4016.00000     s)
+ --------------------------------------------------------------
+ time step          356  (   4015.00000     s)
+ --------------------------------------------------------------
+ time step          355  (   4014.00000     s)
+ --------------------------------------------------------------
+ time step          354  (   4013.00000     s)
+ --------------------------------------------------------------
+ time step          353  (   4012.00000     s)
+ --------------------------------------------------------------
+ time step          352  (   4011.00000     s)
+ --------------------------------------------------------------
+ time step          351  (   4010.00000     s)
+ --------------------------------------------------------------
+ time step          350  (   4009.00000     s)
+ --------------------------------------------------------------
+ time step          349  (   4008.00000     s)
+ --------------------------------------------------------------
+ time step          348  (   4007.00000     s)
+ --------------------------------------------------------------
+ time step          347  (   4006.00000     s)
+ --------------------------------------------------------------
+ time step          346  (   4005.00000     s)
+ --------------------------------------------------------------
+ time step          345  (   4004.00000     s)
+ --------------------------------------------------------------
+ time step          344  (   4003.00000     s)
+ --------------------------------------------------------------
+ time step          343  (   4002.00000     s)
+ --------------------------------------------------------------
+ time step          342  (   4001.00000     s)
+ --------------------------------------------------------------
+ time step          341  (   4000.00000     s)
+ --------------------------------------------------------------
+ time step          340  (   3999.00000     s)
+ --------------------------------------------------------------
+ time step          339  (   3998.00000     s)
+ --------------------------------------------------------------
+ time step          338  (   3997.00000     s)
+ --------------------------------------------------------------
+ time step          337  (   3996.00000     s)
+ --------------------------------------------------------------
+ time step          336  (   3995.00000     s)
+ --------------------------------------------------------------
+ time step          335  (   3994.00000     s)
+ --------------------------------------------------------------
+ time step          334  (   3993.00000     s)
+ --------------------------------------------------------------
+ time step          333  (   3992.00000     s)
+ --------------------------------------------------------------
+ time step          332  (   3991.00000     s)
+ --------------------------------------------------------------
+ time step          331  (   3990.00000     s)
+ --------------------------------------------------------------
+ time step          330  (   3989.00000     s)
+ --------------------------------------------------------------
+ time step          329  (   3988.00000     s)
+ --------------------------------------------------------------
+ time step          328  (   3987.00000     s)
+ --------------------------------------------------------------
+ time step          327  (   3986.00000     s)
+ --------------------------------------------------------------
+ time step          326  (   3985.00000     s)
+ --------------------------------------------------------------
+ time step          325  (   3984.00000     s)
+ --------------------------------------------------------------
+ time step          324  (   3983.00000     s)
+ --------------------------------------------------------------
+ time step          323  (   3982.00000     s)
+ --------------------------------------------------------------
+ time step          322  (   3981.00000     s)
+ --------------------------------------------------------------
+ time step          321  (   3980.00000     s)
+ --------------------------------------------------------------
+ time step          320  (   3979.00000     s)
+ --------------------------------------------------------------
+ time step          319  (   3978.00000     s)
+ --------------------------------------------------------------
+ time step          318  (   3977.00000     s)
+ --------------------------------------------------------------
+ time step          317  (   3976.00000     s)
+ --------------------------------------------------------------
+ time step          316  (   3975.00000     s)
+ --------------------------------------------------------------
+ time step          315  (   3974.00000     s)
+ --------------------------------------------------------------
+ time step          314  (   3973.00000     s)
+ --------------------------------------------------------------
+ time step          313  (   3972.00000     s)
+ --------------------------------------------------------------
+ time step          312  (   3971.00000     s)
+ --------------------------------------------------------------
+ time step          311  (   3970.00000     s)
+ --------------------------------------------------------------
+ time step          310  (   3969.00000     s)
+ --------------------------------------------------------------
+ time step          309  (   3968.00000     s)
+ --------------------------------------------------------------
+ time step          308  (   3967.00000     s)
+ --------------------------------------------------------------
+ time step          307  (   3966.00000     s)
+ --------------------------------------------------------------
+ time step          306  (   3965.00000     s)
+ --------------------------------------------------------------
+ time step          305  (   3964.00000     s)
+ --------------------------------------------------------------
+ time step          304  (   3963.00000     s)
+ --------------------------------------------------------------
+ time step          303  (   3962.00000     s)
+ --------------------------------------------------------------
+ time step          302  (   3961.00000     s)
+ --------------------------------------------------------------
+ time step          301  (   3960.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000018.nc                                                                                       ...time    3900.00000    
+ --------------------------------------------------------------
+ time step          300  (   3959.00000     s)
+ --------------------------------------------------------------
+ time step          299  (   3958.00000     s)
+ --------------------------------------------------------------
+ time step          298  (   3957.00000     s)
+ --------------------------------------------------------------
+ time step          297  (   3956.00000     s)
+ --------------------------------------------------------------
+ time step          296  (   3955.00000     s)
+ --------------------------------------------------------------
+ time step          295  (   3954.00000     s)
+ --------------------------------------------------------------
+ time step          294  (   3953.00000     s)
+ --------------------------------------------------------------
+ time step          293  (   3952.00000     s)
+ --------------------------------------------------------------
+ time step          292  (   3951.00000     s)
+ --------------------------------------------------------------
+ time step          291  (   3950.00000     s)
+ --------------------------------------------------------------
+ time step          290  (   3949.00000     s)
+ --------------------------------------------------------------
+ time step          289  (   3948.00000     s)
+ --------------------------------------------------------------
+ time step          288  (   3947.00000     s)
+ --------------------------------------------------------------
+ time step          287  (   3946.00000     s)
+ --------------------------------------------------------------
+ time step          286  (   3945.00000     s)
+ --------------------------------------------------------------
+ time step          285  (   3944.00000     s)
+ --------------------------------------------------------------
+ time step          284  (   3943.00000     s)
+ --------------------------------------------------------------
+ time step          283  (   3942.00000     s)
+ --------------------------------------------------------------
+ time step          282  (   3941.00000     s)
+ --------------------------------------------------------------
+ time step          281  (   3940.00000     s)
+ --------------------------------------------------------------
+ time step          280  (   3939.00000     s)
+ --------------------------------------------------------------
+ time step          279  (   3938.00000     s)
+ --------------------------------------------------------------
+ time step          278  (   3937.00000     s)
+ --------------------------------------------------------------
+ time step          277  (   3936.00000     s)
+ --------------------------------------------------------------
+ time step          276  (   3935.00000     s)
+ --------------------------------------------------------------
+ time step          275  (   3934.00000     s)
+ --------------------------------------------------------------
+ time step          274  (   3933.00000     s)
+ --------------------------------------------------------------
+ time step          273  (   3932.00000     s)
+ --------------------------------------------------------------
+ time step          272  (   3931.00000     s)
+ --------------------------------------------------------------
+ time step          271  (   3930.00000     s)
+ --------------------------------------------------------------
+ time step          270  (   3929.00000     s)
+ --------------------------------------------------------------
+ time step          269  (   3928.00000     s)
+ --------------------------------------------------------------
+ time step          268  (   3927.00000     s)
+ --------------------------------------------------------------
+ time step          267  (   3926.00000     s)
+ --------------------------------------------------------------
+ time step          266  (   3925.00000     s)
+ --------------------------------------------------------------
+ time step          265  (   3924.00000     s)
+ --------------------------------------------------------------
+ time step          264  (   3923.00000     s)
+ --------------------------------------------------------------
+ time step          263  (   3922.00000     s)
+ --------------------------------------------------------------
+ time step          262  (   3921.00000     s)
+ --------------------------------------------------------------
+ time step          261  (   3920.00000     s)
+ --------------------------------------------------------------
+ time step          260  (   3919.00000     s)
+ --------------------------------------------------------------
+ time step          259  (   3918.00000     s)
+ --------------------------------------------------------------
+ time step          258  (   3917.00000     s)
+ --------------------------------------------------------------
+ time step          257  (   3916.00000     s)
+ --------------------------------------------------------------
+ time step          256  (   3915.00000     s)
+ --------------------------------------------------------------
+ time step          255  (   3914.00000     s)
+ --------------------------------------------------------------
+ time step          254  (   3913.00000     s)
+ --------------------------------------------------------------
+ time step          253  (   3912.00000     s)
+ --------------------------------------------------------------
+ time step          252  (   3911.00000     s)
+ --------------------------------------------------------------
+ time step          251  (   3910.00000     s)
+ --------------------------------------------------------------
+ time step          250  (   3909.00000     s)
+ --------------------------------------------------------------
+ time step          249  (   3908.00000     s)
+ --------------------------------------------------------------
+ time step          248  (   3907.00000     s)
+ --------------------------------------------------------------
+ time step          247  (   3906.00000     s)
+ --------------------------------------------------------------
+ time step          246  (   3905.00000     s)
+ --------------------------------------------------------------
+ time step          245  (   3904.00000     s)
+ --------------------------------------------------------------
+ time step          244  (   3903.00000     s)
+ --------------------------------------------------------------
+ time step          243  (   3902.00000     s)
+ --------------------------------------------------------------
+ time step          242  (   3901.00000     s)
+ --------------------------------------------------------------
+ time step          241  (   3900.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000017.nc                                                                                       ...time    3840.00000    
+ --------------------------------------------------------------
+ time step          240  (   3899.00000     s)
+ --------------------------------------------------------------
+ time step          239  (   3898.00000     s)
+ --------------------------------------------------------------
+ time step          238  (   3897.00000     s)
+ --------------------------------------------------------------
+ time step          237  (   3896.00000     s)
+ --------------------------------------------------------------
+ time step          236  (   3895.00000     s)
+ --------------------------------------------------------------
+ time step          235  (   3894.00000     s)
+ --------------------------------------------------------------
+ time step          234  (   3893.00000     s)
+ --------------------------------------------------------------
+ time step          233  (   3892.00000     s)
+ --------------------------------------------------------------
+ time step          232  (   3891.00000     s)
+ --------------------------------------------------------------
+ time step          231  (   3890.00000     s)
+ --------------------------------------------------------------
+ time step          230  (   3889.00000     s)
+ --------------------------------------------------------------
+ time step          229  (   3888.00000     s)
+ --------------------------------------------------------------
+ time step          228  (   3887.00000     s)
+ --------------------------------------------------------------
+ time step          227  (   3886.00000     s)
+ --------------------------------------------------------------
+ time step          226  (   3885.00000     s)
+ --------------------------------------------------------------
+ time step          225  (   3884.00000     s)
+ --------------------------------------------------------------
+ time step          224  (   3883.00000     s)
+ --------------------------------------------------------------
+ time step          223  (   3882.00000     s)
+ --------------------------------------------------------------
+ time step          222  (   3881.00000     s)
+ --------------------------------------------------------------
+ time step          221  (   3880.00000     s)
+ --------------------------------------------------------------
+ time step          220  (   3879.00000     s)
+ --------------------------------------------------------------
+ time step          219  (   3878.00000     s)
+ --------------------------------------------------------------
+ time step          218  (   3877.00000     s)
+ --------------------------------------------------------------
+ time step          217  (   3876.00000     s)
+ --------------------------------------------------------------
+ time step          216  (   3875.00000     s)
+ --------------------------------------------------------------
+ time step          215  (   3874.00000     s)
+ --------------------------------------------------------------
+ time step          214  (   3873.00000     s)
+ --------------------------------------------------------------
+ time step          213  (   3872.00000     s)
+ --------------------------------------------------------------
+ time step          212  (   3871.00000     s)
+ --------------------------------------------------------------
+ time step          211  (   3870.00000     s)
+ --------------------------------------------------------------
+ time step          210  (   3869.00000     s)
+ --------------------------------------------------------------
+ time step          209  (   3868.00000     s)
+ --------------------------------------------------------------
+ time step          208  (   3867.00000     s)
+ --------------------------------------------------------------
+ time step          207  (   3866.00000     s)
+ --------------------------------------------------------------
+ time step          206  (   3865.00000     s)
+ --------------------------------------------------------------
+ time step          205  (   3864.00000     s)
+ --------------------------------------------------------------
+ time step          204  (   3863.00000     s)
+ --------------------------------------------------------------
+ time step          203  (   3862.00000     s)
+ --------------------------------------------------------------
+ time step          202  (   3861.00000     s)
+ --------------------------------------------------------------
+ time step          201  (   3860.00000     s)
+ --------------------------------------------------------------
+ time step          200  (   3859.00000     s)
+ --------------------------------------------------------------
+ time step          199  (   3858.00000     s)
+ --------------------------------------------------------------
+ time step          198  (   3857.00000     s)
+ --------------------------------------------------------------
+ time step          197  (   3856.00000     s)
+ --------------------------------------------------------------
+ time step          196  (   3855.00000     s)
+ --------------------------------------------------------------
+ time step          195  (   3854.00000     s)
+ --------------------------------------------------------------
+ time step          194  (   3853.00000     s)
+ --------------------------------------------------------------
+ time step          193  (   3852.00000     s)
+ --------------------------------------------------------------
+ time step          192  (   3851.00000     s)
+ --------------------------------------------------------------
+ time step          191  (   3850.00000     s)
+ --------------------------------------------------------------
+ time step          190  (   3849.00000     s)
+ --------------------------------------------------------------
+ time step          189  (   3848.00000     s)
+ --------------------------------------------------------------
+ time step          188  (   3847.00000     s)
+ --------------------------------------------------------------
+ time step          187  (   3846.00000     s)
+ --------------------------------------------------------------
+ time step          186  (   3845.00000     s)
+ --------------------------------------------------------------
+ time step          185  (   3844.00000     s)
+ --------------------------------------------------------------
+ time step          184  (   3843.00000     s)
+ --------------------------------------------------------------
+ time step          183  (   3842.00000     s)
+ --------------------------------------------------------------
+ time step          182  (   3841.00000     s)
+ --------------------------------------------------------------
+ time step          181  (   3840.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000016.nc                                                                                       ...time    3780.00000    
+ --------------------------------------------------------------
+ time step          180  (   3839.00000     s)
+ --------------------------------------------------------------
+ time step          179  (   3838.00000     s)
+ --------------------------------------------------------------
+ time step          178  (   3837.00000     s)
+ --------------------------------------------------------------
+ time step          177  (   3836.00000     s)
+ --------------------------------------------------------------
+ time step          176  (   3835.00000     s)
+ --------------------------------------------------------------
+ time step          175  (   3834.00000     s)
+ --------------------------------------------------------------
+ time step          174  (   3833.00000     s)
+ --------------------------------------------------------------
+ time step          173  (   3832.00000     s)
+ --------------------------------------------------------------
+ time step          172  (   3831.00000     s)
+ --------------------------------------------------------------
+ time step          171  (   3830.00000     s)
+ --------------------------------------------------------------
+ time step          170  (   3829.00000     s)
+ --------------------------------------------------------------
+ time step          169  (   3828.00000     s)
+ --------------------------------------------------------------
+ time step          168  (   3827.00000     s)
+ --------------------------------------------------------------
+ time step          167  (   3826.00000     s)
+ --------------------------------------------------------------
+ time step          166  (   3825.00000     s)
+ --------------------------------------------------------------
+ time step          165  (   3824.00000     s)
+ --------------------------------------------------------------
+ time step          164  (   3823.00000     s)
+ --------------------------------------------------------------
+ time step          163  (   3822.00000     s)
+ --------------------------------------------------------------
+ time step          162  (   3821.00000     s)
+ --------------------------------------------------------------
+ time step          161  (   3820.00000     s)
+ --------------------------------------------------------------
+ time step          160  (   3819.00000     s)
+ --------------------------------------------------------------
+ time step          159  (   3818.00000     s)
+ --------------------------------------------------------------
+ time step          158  (   3817.00000     s)
+ --------------------------------------------------------------
+ time step          157  (   3816.00000     s)
+ --------------------------------------------------------------
+ time step          156  (   3815.00000     s)
+ --------------------------------------------------------------
+ time step          155  (   3814.00000     s)
+ --------------------------------------------------------------
+ time step          154  (   3813.00000     s)
+ --------------------------------------------------------------
+ time step          153  (   3812.00000     s)
+ --------------------------------------------------------------
+ time step          152  (   3811.00000     s)
+ --------------------------------------------------------------
+ time step          151  (   3810.00000     s)
+ --------------------------------------------------------------
+ time step          150  (   3809.00000     s)
+ --------------------------------------------------------------
+ time step          149  (   3808.00000     s)
+ --------------------------------------------------------------
+ time step          148  (   3807.00000     s)
+ --------------------------------------------------------------
+ time step          147  (   3806.00000     s)
+ --------------------------------------------------------------
+ time step          146  (   3805.00000     s)
+ --------------------------------------------------------------
+ time step          145  (   3804.00000     s)
+ --------------------------------------------------------------
+ time step          144  (   3803.00000     s)
+ --------------------------------------------------------------
+ time step          143  (   3802.00000     s)
+ --------------------------------------------------------------
+ time step          142  (   3801.00000     s)
+ --------------------------------------------------------------
+ time step          141  (   3800.00000     s)
+ --------------------------------------------------------------
+ time step          140  (   3799.00000     s)
+ --------------------------------------------------------------
+ time step          139  (   3798.00000     s)
+ --------------------------------------------------------------
+ time step          138  (   3797.00000     s)
+ --------------------------------------------------------------
+ time step          137  (   3796.00000     s)
+ --------------------------------------------------------------
+ time step          136  (   3795.00000     s)
+ --------------------------------------------------------------
+ time step          135  (   3794.00000     s)
+ --------------------------------------------------------------
+ time step          134  (   3793.00000     s)
+ --------------------------------------------------------------
+ time step          133  (   3792.00000     s)
+ --------------------------------------------------------------
+ time step          132  (   3791.00000     s)
+ --------------------------------------------------------------
+ time step          131  (   3790.00000     s)
+ --------------------------------------------------------------
+ time step          130  (   3789.00000     s)
+ --------------------------------------------------------------
+ time step          129  (   3788.00000     s)
+ --------------------------------------------------------------
+ time step          128  (   3787.00000     s)
+ --------------------------------------------------------------
+ time step          127  (   3786.00000     s)
+ --------------------------------------------------------------
+ time step          126  (   3785.00000     s)
+ --------------------------------------------------------------
+ time step          125  (   3784.00000     s)
+ --------------------------------------------------------------
+ time step          124  (   3783.00000     s)
+ --------------------------------------------------------------
+ time step          123  (   3782.00000     s)
+ --------------------------------------------------------------
+ time step          122  (   3781.00000     s)
+ --------------------------------------------------------------
+ time step          121  (   3780.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000015.nc                                                                                       ...time    3720.00000    
+ --------------------------------------------------------------
+ time step          120  (   3779.00000     s)
+ --------------------------------------------------------------
+ time step          119  (   3778.00000     s)
+ --------------------------------------------------------------
+ time step          118  (   3777.00000     s)
+ --------------------------------------------------------------
+ time step          117  (   3776.00000     s)
+ --------------------------------------------------------------
+ time step          116  (   3775.00000     s)
+ --------------------------------------------------------------
+ time step          115  (   3774.00000     s)
+ --------------------------------------------------------------
+ time step          114  (   3773.00000     s)
+ --------------------------------------------------------------
+ time step          113  (   3772.00000     s)
+ --------------------------------------------------------------
+ time step          112  (   3771.00000     s)
+ --------------------------------------------------------------
+ time step          111  (   3770.00000     s)
+ --------------------------------------------------------------
+ time step          110  (   3769.00000     s)
+ --------------------------------------------------------------
+ time step          109  (   3768.00000     s)
+ --------------------------------------------------------------
+ time step          108  (   3767.00000     s)
+ --------------------------------------------------------------
+ time step          107  (   3766.00000     s)
+ --------------------------------------------------------------
+ time step          106  (   3765.00000     s)
+ --------------------------------------------------------------
+ time step          105  (   3764.00000     s)
+ --------------------------------------------------------------
+ time step          104  (   3763.00000     s)
+ --------------------------------------------------------------
+ time step          103  (   3762.00000     s)
+ --------------------------------------------------------------
+ time step          102  (   3761.00000     s)
+ --------------------------------------------------------------
+ time step          101  (   3760.00000     s)
+ --------------------------------------------------------------
+ time step          100  (   3759.00000     s)
+ --------------------------------------------------------------
+ time step           99  (   3758.00000     s)
+ --------------------------------------------------------------
+ time step           98  (   3757.00000     s)
+ --------------------------------------------------------------
+ time step           97  (   3756.00000     s)
+ --------------------------------------------------------------
+ time step           96  (   3755.00000     s)
+ --------------------------------------------------------------
+ time step           95  (   3754.00000     s)
+ --------------------------------------------------------------
+ time step           94  (   3753.00000     s)
+ --------------------------------------------------------------
+ time step           93  (   3752.00000     s)
+ --------------------------------------------------------------
+ time step           92  (   3751.00000     s)
+ --------------------------------------------------------------
+ time step           91  (   3750.00000     s)
+ --------------------------------------------------------------
+ time step           90  (   3749.00000     s)
+ --------------------------------------------------------------
+ time step           89  (   3748.00000     s)
+ --------------------------------------------------------------
+ time step           88  (   3747.00000     s)
+ --------------------------------------------------------------
+ time step           87  (   3746.00000     s)
+ --------------------------------------------------------------
+ time step           86  (   3745.00000     s)
+ --------------------------------------------------------------
+ time step           85  (   3744.00000     s)
+ --------------------------------------------------------------
+ time step           84  (   3743.00000     s)
+ --------------------------------------------------------------
+ time step           83  (   3742.00000     s)
+ --------------------------------------------------------------
+ time step           82  (   3741.00000     s)
+ --------------------------------------------------------------
+ time step           81  (   3740.00000     s)
+ --------------------------------------------------------------
+ time step           80  (   3739.00000     s)
+ --------------------------------------------------------------
+ time step           79  (   3738.00000     s)
+ --------------------------------------------------------------
+ time step           78  (   3737.00000     s)
+ --------------------------------------------------------------
+ time step           77  (   3736.00000     s)
+ --------------------------------------------------------------
+ time step           76  (   3735.00000     s)
+ --------------------------------------------------------------
+ time step           75  (   3734.00000     s)
+ --------------------------------------------------------------
+ time step           74  (   3733.00000     s)
+ --------------------------------------------------------------
+ time step           73  (   3732.00000     s)
+ --------------------------------------------------------------
+ time step           72  (   3731.00000     s)
+ --------------------------------------------------------------
+ time step           71  (   3730.00000     s)
+ --------------------------------------------------------------
+ time step           70  (   3729.00000     s)
+ --------------------------------------------------------------
+ time step           69  (   3728.00000     s)
+ --------------------------------------------------------------
+ time step           68  (   3727.00000     s)
+ --------------------------------------------------------------
+ time step           67  (   3726.00000     s)
+ --------------------------------------------------------------
+ time step           66  (   3725.00000     s)
+ --------------------------------------------------------------
+ time step           65  (   3724.00000     s)
+ --------------------------------------------------------------
+ time step           64  (   3723.00000     s)
+ --------------------------------------------------------------
+ time step           63  (   3722.00000     s)
+ --------------------------------------------------------------
+ time step           62  (   3721.00000     s)
+ --------------------------------------------------------------
+ time step           61  (   3720.00000     s)
+ opening /storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_sims/cLFC_lcl500/3600s_restart/cm1out_000014.nc                                                                                       ...time    3660.00000    
+ --------------------------------------------------------------
+ time step           60  (   3719.00000     s)
+ --------------------------------------------------------------
+ time step           59  (   3718.00000     s)
+ --------------------------------------------------------------
+ time step           58  (   3717.00000     s)
+ --------------------------------------------------------------
+ time step           57  (   3716.00000     s)
+ --------------------------------------------------------------
+ time step           56  (   3715.00000     s)
+ --------------------------------------------------------------
+ time step           55  (   3714.00000     s)
+ --------------------------------------------------------------
+ time step           54  (   3713.00000     s)
+ --------------------------------------------------------------
+ time step           53  (   3712.00000     s)
+ --------------------------------------------------------------
+ time step           52  (   3711.00000     s)
+ --------------------------------------------------------------
+ time step           51  (   3710.00000     s)
+ --------------------------------------------------------------
+ time step           50  (   3709.00000     s)
+ --------------------------------------------------------------
+ time step           49  (   3708.00000     s)
+ --------------------------------------------------------------
+ time step           48  (   3707.00000     s)
+ --------------------------------------------------------------
+ time step           47  (   3706.00000     s)
+ --------------------------------------------------------------
+ time step           46  (   3705.00000     s)
+ --------------------------------------------------------------
+ time step           45  (   3704.00000     s)
+ --------------------------------------------------------------
+ time step           44  (   3703.00000     s)
+ --------------------------------------------------------------
+ time step           43  (   3702.00000     s)
+ --------------------------------------------------------------
+ time step           42  (   3701.00000     s)
+ --------------------------------------------------------------
+ time step           41  (   3700.00000     s)
+ --------------------------------------------------------------
+ time step           40  (   3699.00000     s)
+ --------------------------------------------------------------
+ time step           39  (   3698.00000     s)
+ --------------------------------------------------------------
+ time step           38  (   3697.00000     s)
+ --------------------------------------------------------------
+ time step           37  (   3696.00000     s)
+ --------------------------------------------------------------
+ time step           36  (   3695.00000     s)
+ --------------------------------------------------------------
+ time step           35  (   3694.00000     s)
+ --------------------------------------------------------------
+ time step           34  (   3693.00000     s)
+ --------------------------------------------------------------
+ time step           33  (   3692.00000     s)
+ --------------------------------------------------------------
+ time step           32  (   3691.00000     s)
+ --------------------------------------------------------------
+ time step           31  (   3690.00000     s)
+ --------------------------------------------------------------
+ time step           30  (   3689.00000     s)
+ --------------------------------------------------------------
+ time step           29  (   3688.00000     s)
+ --------------------------------------------------------------
+ time step           28  (   3687.00000     s)
+ --------------------------------------------------------------
+ time step           27  (   3686.00000     s)
+ --------------------------------------------------------------
+ time step           26  (   3685.00000     s)
+ --------------------------------------------------------------
+ time step           25  (   3684.00000     s)
+ --------------------------------------------------------------
+ time step           24  (   3683.00000     s)
+ --------------------------------------------------------------
+ time step           23  (   3682.00000     s)
+ --------------------------------------------------------------
+ time step           22  (   3681.00000     s)
+ --------------------------------------------------------------
+ time step           21  (   3680.00000     s)
+ --------------------------------------------------------------
+ time step           20  (   3679.00000     s)
+ --------------------------------------------------------------
+ time step           19  (   3678.00000     s)
+ --------------------------------------------------------------
+ time step           18  (   3677.00000     s)
+ --------------------------------------------------------------
+ time step           17  (   3676.00000     s)
+ --------------------------------------------------------------
+ time step           16  (   3675.00000     s)
+ --------------------------------------------------------------
+ time step           15  (   3674.00000     s)
+ --------------------------------------------------------------
+ time step           14  (   3673.00000     s)
+ --------------------------------------------------------------
+ time step           13  (   3672.00000     s)
+ --------------------------------------------------------------
+ time step           12  (   3671.00000     s)
+ --------------------------------------------------------------
+ time step           11  (   3670.00000     s)
+ --------------------------------------------------------------
+ time step           10  (   3669.00000     s)
+ --------------------------------------------------------------
+ time step            9  (   3668.00000     s)
+ --------------------------------------------------------------
+ time step            8  (   3667.00000     s)
+ --------------------------------------------------------------
+ time step            7  (   3666.00000     s)
+ --------------------------------------------------------------
+ time step            6  (   3665.00000     s)
+ --------------------------------------------------------------
+ time step            5  (   3664.00000     s)
+ --------------------------------------------------------------
+ time step            4  (   3663.00000     s)
+ --------------------------------------------------------------
+ time step            3  (   3662.00000     s)
+ --------------------------------------------------------------
+ time step            2  (   3661.00000     s)
+ ###################################################################
+ # write out netcdf file
+
+ done writing out netcdf file
+ program terminated normally
+
+dt = 60 s
+Elapsed time =  0:04:38.422289
+
+dt = 30 s
+Elapsed time =  0:04:57.773192
+
+dt = 15 s
+Elapsed time =  0:04:54.319748
+
+dt = 10 s
+Elapsed time =  0:05:12.037084
+
+dt = 5 s
+Elapsed time =  0:06:39.572079
+
+dt = 1 s
+Elapsed time =  0:19:11.461710
