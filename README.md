@@ -2,7 +2,7 @@
 
 ### Compute Backward Trajectories Using CM1 Output
 
-This code is a stripped-down version of the trajectory code in Ryan Hastings' 
+This code is a stripped-down version of the trajectory code in Dr. Ryan Hastings' 
 [cm1_pp](https://github.com/RyanHastings/cm1_pp) package. 
 Unlike Ryan's code, only user-specified fields are interpolated 
 to the parcel locations, forward parcel integrations are not performed, and 
