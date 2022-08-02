@@ -1,0 +1,20 @@
+This directory contains some of the files for three different tests:
+
+1. Comparison between backward trajectories computed with different timesteps
+    (but using 60 s between 3-D output file dumps) and forward parcel 
+    trajectories computed while CM1 is integrated forwards in time. Timesteps
+    tested include 60, 30, 15, 10, 5, and 1 s, and output is saved in the
+    traj_test_XXs.nc files. The script compare_forward_backward_traj.py
+    compares the forward and backward trajectories, with the forward 
+    trajectories assumed to be the "truth." The CM1 3-D output file and forward
+    parcel trajectory data needed to run this Python are not included in this
+    directory.
+
+2. Timing tests using different numbers of parcels. Output files are 
+    traj_test_XXs_PYY.nc, where YY is the number of parcels and XX is the
+    integration timestep.
+
+3. Testing the interpolation of model variables to the backward parcel 
+    locations. This is done in the test_interp.py script. As with test (1), this
+    script requires 3-D CM1 output files, which are not included in this 
+    directory.
