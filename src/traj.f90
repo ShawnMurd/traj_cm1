@@ -277,6 +277,10 @@ program traj
   allocate( ypc(npstep,nparcels) )
   allocate( zpc(npstep,nparcels) )
 
+  xpc=missing_value
+  ypc=missing_value
+  zpc=missing_value
+
   allocate( up(npstep,nparcels) )
   allocate( vp(npstep,nparcels) )
   allocate( wp(npstep,nparcels) )
@@ -362,11 +366,17 @@ program traj
     ! Interpolate winds and scalars to each parcel location, then advance parcel back in time
     do np=1,nparcels
 
-      call interp_all( xpc(tstep,np), ypc(tstep,np), zpc(tstep,np), zzh, u, up(tstep,np), v, vp(tstep,np), &
-        w, wp(tstep,np), nvars, varcm1, varp(tstep,np,:) )
+      if (xpc(tstep,np).ne.missing_value) then
+        ! Parcel has not exited domain yet
+        call interp_all( xpc(tstep,np), ypc(tstep,np), zpc(tstep,np), zzh, u, up(tstep,np), v, vp(tstep,np), &
+          w, wp(tstep,np), nvars, varcm1, varp(tstep,np,:) )
+      endif
 
-      call rk4( xpc(tstep-1:tstep,np), ypc(tstep-1:tstep,np), zpc(tstep-1:tstep,np), &
-        up(tstep,np), vp(tstep,np), wp(tstep,np), u, v, w, utem, vtem, wtem, dt )
+      if (xpc(tstep,np).ne.missing_value) then
+        ! Parcel has not exited domain yet
+        call rk4( xpc(tstep-1:tstep,np), ypc(tstep-1:tstep,np), zpc(tstep-1:tstep,np), &
+          up(tstep,np), vp(tstep,np), wp(tstep,np), u, v, w, utem, vtem, wtem, dt )
+      endif
 
     enddo
 

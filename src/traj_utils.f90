@@ -119,7 +119,7 @@ contains
 
     call find_surrounding_grid_points( xpc, ypc, zpc, ih, iif, jh, jf, kh, kf )
 
-         IF((Iif.NE.9999).and.(jf.ne.9999).and.(kf.ne.9999))THEN ! the parcel has not gone off the edge
+         IF((ih.NE.missing_flag).and.(jh.ne.missing_flag).and.(kh.ne.missing_flag))THEN ! the parcel has not gone off the edge
 
     call interp_u( u, xpc, ypc, zpc, iif, jh, kh, zzh, up )
     call interp_v( v, xpc, ypc, zpc,  ih, jf, kh, zzh, vp )
@@ -131,15 +131,15 @@ contains
 
         ELSE ! parcel has gone off the edge
 
-    xpc=-9.e9
-    ypc=-9.e9
-    zpc=-9.e9
+    xpc=missing_value
+    ypc=missing_value
+    zpc=missing_value
 
-    up=-9.e9
-    vp=-9.e9
-    wp=-9.e9
+    up=missing_value
+    vp=missing_value
+    wp=missing_value
     
-    pvar=-9.e9
+    pvar=missing_value
 
 
         ENDIF
@@ -177,9 +177,19 @@ contains
 
     call find_surrounding_grid_points( xpc, ypc, zpc, ih, iif, jh, jf, kh, kf )
 
-    call interp_u( u, xpc, ypc, zpc, iif, jh, kh, zzh, up )
-    call interp_v( v, xpc, ypc, zpc,  ih, jf, kh, zzh, vp )
-    call interp_w( w, xpc, ypc, zpc,  ih, jh, kf, wp )
+    if((ih.ne.missing_flag).and.(jh.ne.missing_flag).and.(kh.ne.missing_flag))then ! the parcel has not gone off the edge
+    
+      call interp_u( u, xpc, ypc, zpc, iif, jh, kh, zzh, up )
+      call interp_v( v, xpc, ypc, zpc,  ih, jf, kh, zzh, vp )
+      call interp_w( w, xpc, ypc, zpc,  ih, jh, kf, wp )
+
+    else
+
+      up=missing_value
+      vp=missing_value
+      wp=missing_value
+
+    endif
 
   end subroutine
 
@@ -208,9 +218,9 @@ contains
     tmp=minloc(abs(xh(:)-xpc))
     ih=tmp(1)
     if(xpc.lt.xh(1))then
-      ih=1
+      ih=missing_flag
     elseif(xpc.gt.xh(ni))then
-      ih=ni-1
+      ih=missing_flag
     else
       if(xh(ih).gt.xpc)then
         ih=tmp(1)-1
@@ -226,9 +236,9 @@ contains
       tmp=minloc(abs(yh(:)-ypc))
       jh=tmp(1)
       if(ypc.lt.yh(1))then
-        jh=1
+        jh=missing_flag
       elseif(ypc.gt.yh(nj))then
-        jh=nj-1
+        jh=missing_flag
       else
         if(yh(jh).gt.ypc)then
           jh=tmp(1)-1
@@ -241,9 +251,9 @@ contains
     tmp=minloc(abs(zh(:)-zpc))
     kh=tmp(1)
     if(zpc.lt.zh(1))then
-      kh=0
+      kh=missing_flag
     elseif(zpc.gt.zh(nk))then
-      kh=nk-1
+      kh=missing_flag
     else
       if(zh(kh).gt.zpc)then
         kh=tmp(1)-1
@@ -255,11 +265,9 @@ contains
     tmp=minloc(abs(xf(:)-xpc))
     iif=tmp(1)
     if(xpc.lt.xf(1))then
-      iif=1
-      xpc=xf(1)
+      iif=missing_flag
     elseif(xpc.gt.xf(ni+1))then
-      iif=ni
-      xpc=xf(ni)
+      iif=missing_flag
     else
       if(xf(iif).gt.xpc)then
         iif=tmp(1)-1
@@ -271,11 +279,9 @@ contains
     tmp=minloc(abs(yf(:)-ypc))
     jf=tmp(1)
     if(ypc.lt.yf(1))then
-      jf=1
-      ypc=yf(1)
+      jf=missing_flag
     elseif(ypc.gt.yf(nj+1))then
-      jf=nj
-      ypc=yf(nj)
+      jf=missing_flag
     else
       if(yf(jf).gt.ypc)then
         jf=tmp(1)-1
@@ -287,11 +293,9 @@ contains
     tmp=minloc(abs(zf(:)-zpc))
     kf=tmp(1)
     if(zpc.lt.0)then
-      kf=1
-      zpc=0
+      kf=missing_flag
     elseif(zpc.gt.zf(nk+1))then
-      kf=nk
-      zpc=zf(nk)
+      kf=missing_flag
     else
       if(zf(kf).gt.zpc)then
         kf=tmp(1)-1
@@ -649,7 +653,7 @@ contains
 
     call find_surrounding_grid_points( xpc, ypc, zpc, ih, iif, jh, jf, kh, kf )
 
-      if((iif.ne.9999).and.(jf.ne.9999).and.(kf.ne.9999))then
+      if((iif.ne.missing_flag).and.(jf.ne.missing_flag).and.(kf.ne.missing_flag))then
 
     call interp_u( pgfx_b,  xpc, ypc, zpc, iif, jh, kh, zzh, pgfxbp )
     call interp_u( pgfx_dl, xpc, ypc, zpc, iif, jh, kh, zzh, pgfxdlp )

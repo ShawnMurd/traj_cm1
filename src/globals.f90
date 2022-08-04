@@ -55,7 +55,7 @@ module globals
   integer,public :: output_dl, output_dn, output_b ! for dyn.input
   integer,public :: output_dyn, output_vor, output_z_only, noncq ! for traj.input
 
-  integer,public :: missing_flag
+  integer,public :: missing_flag = -1
   real,public,parameter :: missing_value = -9e9
 
 
