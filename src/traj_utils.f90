@@ -732,9 +732,6 @@ contains
     real k3w, k3wa, k3wb
     real k4w, k4wa, k4wb
 
-        IF((XPC(1).NE.-9.E9).AND.(YPC(1).NE.-9.E9).AND.(ZPC(1).NE.-9.E9).and. &
-          & (xpc(2).ne.-9.e9).and.(ypc(2).ne.-9.e9).and.(zpc(2).ne.-9.e9))THEN
-
     zzh(0)=-zh(1)
     zzh(1:nk) = zh(1:nk)
 
@@ -748,61 +745,64 @@ contains
       z1=zpc(2)
     endif
 
-    k1u=up
-    k1v=vp
-    k1w=wp
+    if ((x1.ne.missing_value).and.(y1.ne.missing_value).and. &
+        (z1.ne.missing_value)) then
 
-    x2 = x1 + 0.5*dt*k1u
-    y2 = y1 + 0.5*dt*k1v
-    z2 = z1 + 0.5*dt*k1w
+      k1u=up
+      k1v=vp
+      k1w=wp
 
-    call interp_winds( x2, y2, z2, zzh, u, k2ua, v, k2va, w, k2wa )
-    call interp_winds( x2, y2, z2, zzh, utem, k2ub, vtem, k2vb, wtem, k2wb )
+      x2 = x1 + 0.5*dt*k1u
+      y2 = y1 + 0.5*dt*k1v
+      z2 = z1 + 0.5*dt*k1w
 
-    k2u=0.5*(k2ua+k2ub)
-    k2v=0.5*(k2va+k2vb)
-    k2w=0.5*(k2wa+k2wb)
+      call interp_winds( x2, y2, z2, zzh, u, k2ua, v, k2va, w, k2wa )
+      call interp_winds( x2, y2, z2, zzh, utem, k2ub, vtem, k2vb, wtem, k2wb )
 
-    x3 = x1 + 0.5*dt*k2u
-    y3 = y1 + 0.5*dt*k2v
-    z3 = z1 + 0.5*dt*k2w
+      k2u=0.5*(k2ua+k2ub)
+      k2v=0.5*(k2va+k2vb)
+      k2w=0.5*(k2wa+k2wb)
 
-    call interp_winds( x3, y3, z3, zzh, u, k3ua, v, k3va, w, k3wa )
-    call interp_winds( x3, y3, z3, zzh, utem, k3ub, vtem, k3vb, wtem, k3wb )
+      x3 = x1 + 0.5*dt*k2u
+      y3 = y1 + 0.5*dt*k2v
+      z3 = z1 + 0.5*dt*k2w
 
-    k3u=0.5*(k3ua+k3ub)
-    k3v=0.5*(k3va+k3vb)
-    k3w=0.5*(k3wa+k3wb)
+      call interp_winds( x3, y3, z3, zzh, u, k3ua, v, k3va, w, k3wa )
+      call interp_winds( x3, y3, z3, zzh, utem, k3ub, vtem, k3vb, wtem, k3wb )
 
-    x4 = x1 + dt*k3u
-    y4 = y1 + dt*k3v
-    z4 = z1 + dt*k3w
+      k3u=0.5*(k3ua+k3ub)
+      k3v=0.5*(k3va+k3vb)
+      k3w=0.5*(k3wa+k3wb)
 
-    if(dt.gt.0)then
+      x4 = x1 + dt*k3u
+      y4 = y1 + dt*k3v
+      z4 = z1 + dt*k3w
 
-      call interp_winds( x4, y4, z4, zzh, utem, k4u, vtem, k4v, wtem, k4w )
+      if(dt.gt.0)then
+  
+        call interp_winds( x4, y4, z4, zzh, utem, k4u, vtem, k4v, wtem, k4w )
+  
+        xpc(2) = xpc(1) + dt*( k1u + 2*k2u + 2*k3u + k4u )/6
+        ypc(2) = ypc(1) + dt*( k1v + 2*k2v + 2*k3v + k4v )/6
+        zpc(2) = max( (zpc(1)+dt*(k1w+2*k2w+2*k3w+k4w)/6), 0.0 )
 
-      xpc(2) = xpc(1) + dt*( k1u + 2*k2u + 2*k3u + k4u )/6
-      ypc(2) = ypc(1) + dt*( k1v + 2*k2v + 2*k3v + k4v )/6
-      zpc(2) = max( (zpc(1)+dt*(k1w+2*k2w+2*k3w+k4w)/6), 0.0 )
+      else
+
+        call interp_winds( x4, y4, z4, zzh, u, k4u, v, k4v, w, k4w )
+
+        xpc(1) = xpc(2) + dt*( k1u + 2*k2u + 2*k3u + k4u )/6
+        ypc(1) = ypc(2) + dt*( k1v + 2*k2v + 2*k3v + k4v )/6
+        zpc(1) = max( (zpc(2)+dt*(k1w+2*k2w+2*k3w+k4w)/6), 0.0 )
+
+      endif
 
     else
 
-      call interp_winds( x4, y4, z4, zzh, u, k4u, v, k4v, w, k4w )
-
-      xpc(1) = xpc(2) + dt*( k1u + 2*k2u + 2*k3u + k4u )/6
-      ypc(1) = ypc(2) + dt*( k1v + 2*k2v + 2*k3v + k4v )/6
-      zpc(1) = max( (zpc(2)+dt*(k1w+2*k2w+2*k3w+k4w)/6), 0.0 )
+      xpc=missing_value
+      ypc=missing_value
+      zpc=missing_value
 
     endif
-
-        ELSE
-
-    xpc=-9.e9
-    ypc=-9.e9
-    zpc=-9.e9
-
-         ENDIF
 
   end subroutine
   !################################################################!

@@ -27,7 +27,7 @@ cm1_dir = ('/storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_si
 cm1_files = [cm1_dir + 'cm1out_000021.nc',
              cm1_dir + 'cm1out_000022.nc']
 
-traj_file = 'traj_test_15s.nc'
+traj_file = 'traj_test_15s_p3.nc'
 test_times = [4095, 4110, 4125]
 fields = ['qv', 'qr', 'qc', 'qi', 'qi2']
 
@@ -39,6 +39,7 @@ fields = ['qv', 'qr', 'qc', 'qi', 'qi2']
 cm1_ds = xr.open_mfdataset(cm1_files)
     
 traj = xr.open_dataset(traj_file)
+traj = traj.where(traj['xp'] > -8e9)
 
 
 #%%-------------------------------------------------------------------------------------------------
@@ -53,11 +54,12 @@ for i, f in enumerate(cm1_files):
     for field in fields:
         print('Field = %s' % field)
         for n in traj.parcel:
-            truth = cm1_ds[field][i, :, :, :].interp(zh=(1e-3*traj.zp[n, tind].values), 
-                                                     yh=(1e-3*traj.yp[n, tind].values),
-                                                     xh=(1e-3*traj.xp[n, tind].values))
-            print('percent diff = %.5f (truth = %.5f)' % 
-                  (100*((traj[field][n, tind].values - truth) / truth), truth))
+            if not np.isnan(traj[field][n, tind].values):
+                truth = cm1_ds[field][i, :, :, :].interp(zh=(1e-3*traj.zp[n, tind].values), 
+                                                         yh=(1e-3*traj.yp[n, tind].values),
+                                                         xh=(1e-3*traj.xp[n, tind].values))
+                print('percent diff = %.5f (truth = %.5f)' % 
+                      (100*((traj[field][n, tind].values - truth) / truth), truth))
     
 
 #%%-------------------------------------------------------------------------------------------------
@@ -74,12 +76,13 @@ for t in test_times:
     for field in fields:
         print('Field = %s' % field)
         for n in traj.parcel:
-            truth = cm1_ds[field].interp(zh=(1e-3*traj.zp[n, tind].values), 
-                                         yh=(1e-3*traj.yp[n, tind].values),
-                                         xh=(1e-3*traj.xp[n, tind].values),
-                                         time=time)
-            print('percent diff = %.5f (truth = %.5f)' % 
-                  (100*((traj[field][n, tind].values - truth) / truth), truth))
+            if not np.isnan(traj[field][n, tind].values):
+                truth = cm1_ds[field].interp(zh=(1e-3*traj.zp[n, tind].values), 
+                                             yh=(1e-3*traj.yp[n, tind].values),
+                                             xh=(1e-3*traj.xp[n, tind].values),
+                                             time=time)
+                print('percent diff = %.5f (truth = %.5f)' % 
+                      (100*((traj[field][n, tind].values - truth) / truth), truth))
 
 
 #%%-------------------------------------------------------------------------------------------------
@@ -108,6 +111,9 @@ xind = int(np.floor((xp - cm1_ds.xh[0].values) / dx))
 yind = int(np.floor((yp - cm1_ds.yh[0].values) / dy))
 zind = int(np.floor((zp - cm1_ds.zh[0].values) / dz))
 
+print('------------------------------------------------------')
+print()
+print('Digging Into a Specific Parce')
 print('parcel location = (%.3f, %.3f, %.3f) km' % (xp, yp, zp))
 print('parcel value for %s = %.5f' % (field, traj[field][nprcl, prcl_tind]))
 print('CM1 lower-left corner = (%.3f, %.3f, %.3f) km' % (cm1_ds.xh[xind], cm1_ds.yh[yind],

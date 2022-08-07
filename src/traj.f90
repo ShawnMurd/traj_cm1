@@ -287,6 +287,8 @@ program traj
 
   allocate( varp(npstep,nparcels,nvars) )
 
+  varp=missing_value
+
   write(*,*) 'number of backward integration steps = ',npstep
 
   !----------------------------------------------------------------------------!

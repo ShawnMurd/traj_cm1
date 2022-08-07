@@ -28,11 +28,11 @@ cm1_fname = ('/storage/home/sfm5282/scratch/mmp_supercell_ctrl_reruns/sims/prcl_
 # NetCDF files holding backward parcel trajectory info and timesteps for these output files
 
 dt = [60, 30, 15, 10, 5, 1]
-back_fname = ['traj_test_%ds.nc' % i for i in dt]
+back_fname = ['traj_test_%ds_p3.nc' % i for i in dt]
 
 # Runtime for each backward trajectory calculation (one per output file, in s)
 
-runtime = [278, 298, 294, 312, 400, 1151]
+#runtime = [278, 298, 294, 312, 400, 1151]
 
 # Forward parcel trajectory output and parcels used for comparisons with backward trajectories
 
@@ -75,6 +75,7 @@ pdf = PdfPages(save_fname)
 for f in back_fname:
 
     back = xr.open_dataset(f)
+    back = back.where(back['xp'] > -8e9)
     
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(12, 7))
     
@@ -113,13 +114,13 @@ for f in back_fname:
     plt.suptitle(f, size=20)
     
     pdf.savefig(fig)
-    plt.show() 
+    #plt.show() 
 
 
 #%%-------------------------------------------------------------------------------------------------
 # Plot Runtimes
 #---------------------------------------------------------------------------------------------------
-
+'''
 fig = plt.figure()
 
 plt.plot(dt, runtime, 'b-')
@@ -134,7 +135,7 @@ plt.grid()
 
 pdf.savefig(fig)
 plt.show()
-
+'''
 pdf.close()
 
 

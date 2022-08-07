@@ -20,11 +20,11 @@ import datetime as dt
 
 # Timesteps are in seconds
 
-#steps = [60, 30, 15, 10, 5, 1] + [15]*3
-#plist = [3]*6 + list(range(6, 13, 3))
+steps = [60, 30, 15, 10, 5, 1] + [15]*3
+nprcl = [3]*6 + list(range(6, 13, 3))
 
-steps = [15]*3
-nprcl = list(range(6, 13, 3))
+#steps = [15]*3
+#nprcl = list(range(6, 13, 3))
 
 
 #---------------------------------------------------------------------------------------------------
